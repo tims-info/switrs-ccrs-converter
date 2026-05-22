@@ -100,13 +100,13 @@ This lookup table was compiled by UC Berkeley **SafeTREC** by accessing the CVC 
 
 #### **Sample Rows:**
 
-| vc_code | sub | pcf | oaf | id | vc_code_full |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| 22107 | 0 | 08 | 31 | 216 | 22107 |
-| 22350 | 0 | 03 | 25 | 224 | 22350 |
-| 21658 | A | 07 | 28 | 154 | 21658A |
-| 23152 | A | 01 | 20 | 276 | 23152A |
-| 22515 | A | 13 | 38 | 248 | 22515A |
+| vc_code | sub | pcf | oaf | vc_code_full |
+| :--- | :--- | :--- | :--- | :--- |
+| 22107 | 0 | 08 | 31 | 22107 |
+| 22350 | 0 | 03 | 25 | 22350 |
+| 21658 | A | 07 | 28 | 21658A |
+| 23152 | A | 01 | 20 | 23152A |
+| 22515 | A | 13 | 38 | 22515A |
 
 *Category Mapping Examples:* 01 \= Driving Under Influence, 03 \= Unsafe Speed, 07 \= Unsafe Lane Change, 08 \= Improper Turning, 13 \= Hazardous Parking.
 
@@ -139,7 +139,7 @@ Due to inconsistencies that occasionally occur in native CCRS exports, a diagnos
 | 4712045 | 1900-2025-00187 | 20250211 | 0 | 3 | 0 | 1 | injured: IWP=1 vs CCRS=3 (IWP LOWER - possible missing IWP rows) |
 | 4698120 | 5701-2025-00923 | 20250118 | 2 | 1 | 4 | 1 | killed: IWP=4 vs CCRS=2 (IWP HIGHER - possible duplicates) |
 
-*Note: The converter maintains strict analytical neutrality and **does not modify** the source values. NumberKilled and NumberInjured in the crash output are written exactly as exported from CCRS, even when discrepancies are detected in the IWP table.*
+*Note: The converter does not modify the source values. NumberKilled and NumberInjured in the crash output are written exactly as exported from CCRS, even when discrepancies are detected in the IWP table.*
 
 ### **3.4 Accident Table Field Mappings**
 
