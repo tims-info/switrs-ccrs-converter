@@ -87,7 +87,7 @@ python ccrs\_switrs\_converter.py \\
 
 The vc\_codes\_table.csv file maps raw California Vehicle Code (CVC) section strings to their corresponding two-digit SWITRS violation category codes used in the pcf\_viol\_category and oaf\_viol\_cat fields. 
 
-This lookup table was compiled by UC Berkeley's **SafeTREC**. If this file is not supplied during conversion, pcf\_viol\_category and oaf\_viol\_cat will remain empty in the converted output tables.
+This lookup table was compiled by UC Berkeley **SafeTREC** by accessing the CVC site at: https://leginfo.legislature.ca.gov/faces/codesTOCSelected.xhtml?tocCode=VEH&tocTitle=+Vehicle+Code+-+VEH. The lookup table attempts to assign violation codes for all the relevant CVC, but is subject to errors. Also the CVC code is not static, so any new codes that are added will not be included in this file. If this file is not supplied during conversion, pcf\_viol\_category and oaf\_viol\_cat will remain empty in the converted output tables.
 
 #### **Column Mapping Definitions:**
 
@@ -100,12 +100,13 @@ This lookup table was compiled by UC Berkeley's **SafeTREC**. If this file is no
 
 #### **Sample Rows:**
 
-vc\_code,sub,pcf,oaf,id,vc\_code\_full  
-22107,0,08,31,216,22107  
-22350,0,03,25,224,22350  
-21658,A,07,28,154,21658A  
-23152,A,01,20,276,23152A  
-22515,A,13,38,248,22515A
+| vc_code | sub | pcf | oaf | id | vc_code_full |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 22107 | 0 | 08 | 31 | 216 | 22107 |
+| 22350 | 0 | 03 | 25 | 224 | 22350 |
+| 21658 | A | 07 | 28 | 154 | 21658A |
+| 23152 | A | 01 | 20 | 276 | 23152A |
+| 22515 | A | 13 | 38 | 248 | 22515A |
 
 *Category Mapping Examples:* 01 \= Driving Under Influence, 03 \= Unsafe Speed, 07 \= Unsafe Lane Change, 08 \= Improper Turning, 13 \= Hazardous Parking.
 
@@ -132,12 +133,13 @@ Due to inconsistencies that occasionally occur in native CCRS exports, a diagnos
 
 #### **Sample Rows:**
 
-collision\_id,report\_number,crash\_date,ccrs\_killed,ccrs\_injured,iwp\_killed,iwp\_injured,discrepancy\_type  
-4669308,9525-2025-00041,20250103,1,2,9,2,killed: IWP=9 vs CCRS=1 (IWP HIGHER \- possible duplicates)  
-4712045,1900-2025-00187,20250211,0,3,0,1,injured: IWP=1 vs CCRS=3 (IWP LOWER \- possible missing IWP rows)  
-4698120,5701-2025-00923,20250118,2,1,4,1,killed: IWP=4 vs CCRS=2 (IWP HIGHER \- possible duplicates)
+| collision_id | report_number | crash_date | ccrs_killed | ccrs_injured | iwp_killed | iwp_injured | discrepancy_type |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 4669308 | 9525-2025-00041 | 20250103 | 1 | 2 | 9 | 2 | killed: IWP=9 vs CCRS=1 (IWP HIGHER - possible duplicates) |
+| 4712045 | 1900-2025-00187 | 20250211 | 0 | 3 | 0 | 1 | injured: IWP=1 vs CCRS=3 (IWP LOWER - possible missing IWP rows) |
+| 4698120 | 5701-2025-00923 | 20250118 | 2 | 1 | 4 | 1 | killed: IWP=4 vs CCRS=2 (IWP HIGHER - possible duplicates) |
 
-*Note: The converter maintains strict analytical neutrality and **does not modify** the source values. NumberKilled and NumberInjured in the crash output are written exactly as exported from CCRS, even when discrepancies are detected.*
+*Note: The converter maintains strict analytical neutrality and **does not modify** the source values. NumberKilled and NumberInjured in the crash output are written exactly as exported from CCRS, even when discrepancies are detected in the IWP table.*
 
 ### **3.4 Accident Table Field Mappings**
 
@@ -375,7 +377,7 @@ Users should be aware of the following programmatic limitations when using these
 
 ## **7. Support and Updates**
 
-As California's data structures mature, field values and formats may change. If a converted field is unexpectedly blank:
+As California's crash data structures mature, field values and formats may change. If a converted field is unexpectedly blank:
 
 1. Verify if your CSV files contain non-standard header column names. Check the FIELD MAPPING REFERENCE block at the top of the python scripts.  
 2. Ensure you have provided vc\_codes\_table.csv to successfully populate violation fields.  
@@ -387,3 +389,4 @@ As California's data structures mature, field values and formats may change. If 
 * CHP Collision Investigation Manual (HPM 110.5)  
 * SWITRS Data Dictionary (Current as of 4/26/2022)  
 * SWITRS Raw Data Tables Excel Workbook
+* California Vehicle Code 
