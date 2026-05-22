@@ -87,7 +87,7 @@ python ccrs\_switrs\_converter.py \\
 
 The vc\_codes\_table.csv file maps raw California Vehicle Code (CVC) section strings to their corresponding two-digit SWITRS violation category codes used in the pcf\_viol\_category and oaf\_viol\_cat fields. 
 
-This lookup table was compiled by UC Berkeley **SafeTREC** by accessing the CVC site at: https://leginfo.legislature.ca.gov/faces/codesTOCSelected.xhtml?tocCode=VEH&tocTitle=+Vehicle+Code+-+VEH. The lookup table attempts to assign violation codes for all the relevant CVC, but is subject to errors. Also the CVC code is not static, so any new codes that are added will not be included in this file. If this file is not supplied during conversion, pcf\_viol\_category and oaf\_viol\_cat will remain empty in the converted output tables.
+This lookup table was compiled by UC Berkeley **SafeTREC** by accessing the <a href="https://leginfo.legislature.ca.gov/faces/codesTOCSelected.xhtml?tocCode=VEH&tocTitle=+Vehicle+Code+-+VEH" target="_blank">CVC site</a>. The lookup table attempts to assign violation codes for all the relevant CVC, but is subject to errors. Also the CVC code is not static, so any new codes that are added will not be included in this file. If this file is not supplied during conversion, pcf\_viol\_category and oaf\_viol\_cat will remain empty in the converted output tables.
 
 #### **Column Mapping Definitions:**
 
