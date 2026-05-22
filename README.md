@@ -6,20 +6,20 @@ These scripts run natively in Python 3.8+ with **zero external library dependenc
 
 ## **Table of Contents**
 
-1. [Overview](#overview)  
-2. [Background: CCRS and SWITRS](#background-ccrs-and-switrs)  
-3. [CCRS → SWITRS Converter (ccrs\_switrs\_converter.py)](#ccrs--switrs-converter-ccrs_switrs_converterpy)  
-    * [Command Usage](#command-usage)  
-    * [Vehicle Code Lookup File (vc\_codes\_table.csv)](#vehicle-code-lookup-file-vc_codes_tablecsv)  
-    * [Data Quality Diagnostic Log (data\_quality\_log.csv)](#data-quality-diagnostic-log-data_quality_logcsv)  
-    * [CCRS → SWITRS Field Mapping Specifications](#ccrs--switrs-field-mapping-specifications)  
-4. [SWITRS → CCRS Converter (switrs\_ccrs\_converter.py)](#switrs--ccrs-converter-switrs_ccrs_converterpy)  
-    * [Command Usage](#command-usage-1)  
-    * [SWITRS → CCRS Field Mapping Specifications](#switrs--ccrs-field-mapping-specifications)  
-    * [Fields Not Recoverable from SWITRS](#fields-not-recoverable-from-switrs)  
-5. [Limitations & Constraints](#limitations)  
-6. [Requirements & Setup](#requirements-and-setup)  
-7. [Support & Updates](#support-and-updates)
+1. [Overview](#1-overview)  
+2. [Background: CCRS and SWITRS](#2-background-ccrs-and-switrs)  
+3. [CCRS → SWITRS Converter (ccrs\_switrs\_converter.py)](#3-ccrs--switrs-converter-ccrs_switrs_converterpy)  
+    * [Command Usage](#31-command-usage)  
+    * [Vehicle Code Lookup File (vc\_codes\_table.csv)](#32-vehicle-code-lookup-file-vc_codes_tablecsv)  
+    * [Data Quality Diagnostic Log (data\_quality\_log.csv)](#33-data-quality-diagnostic-log-data_quality_logcsv)  
+    * [CCRS → SWITRS Field Mapping Specifications](#34-accident-table-field-mappings)  
+4. [SWITRS → CCRS Converter (switrs\_ccrs\_converter.py)](#4-switrs--ccrs-converter-switrs_ccrs_converterpy)  
+    * [Command Usage](#41-command-usage)  
+    * [SWITRS → CCRS Field Mapping Specifications](#42-crash-table-field-mappings)  
+    * [Fields Not Recoverable from SWITRS](#45-fields-not-recoverable-from-switrs)  
+5. [Limitations & Constraints](#5-limitations)  
+6. [Requirements & Setup](#6-requirements-and-setup)  
+7. [Support & Updates](#7-support-and-updates)
 
 ## **1. Overview**
 
