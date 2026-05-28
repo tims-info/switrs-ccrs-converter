@@ -25,8 +25,8 @@ These scripts run natively in Python 3.8+ with **zero external library dependenc
 
 | Script | Direction | Purpose |
 | :---- | :---- | :---- |
-| **ccrs\_switrs\_converter.py** | CCRS → SWITRS | Converts modern CCRS raw data exports into SWITRS-compatible CSV files, enabling integration with historical SWITRS analytical models, tools, and databases. |
-| **switrs\_ccrs\_converter.py** | SWITRS → CCRS | Converts legacy SWITRS data into contemporary CCRS structures, allowing historical datasets to be loaded directly into CCRS-focused pipelines. |
+| **ccrs\_switrs\_converter.py** | CCRS → SWITRS | Converts CCRS raw data exports into SWITRS-compatible CSV files, enabling integration with historical SWITRS analytical models, tools, and databases. |
+| **switrs\_ccrs\_converter.py** | SWITRS → CCRS | Converts SWITRS data into contemporary CCRS structures, allowing historical datasets to be loaded directly into CCRS-focused pipelines. |
 
 Both scripts process standard CSV data files and export structured CSV outputs.
 
@@ -34,17 +34,17 @@ Both scripts process standard CSV data files and export structured CSV outputs.
 
 ### **2.1 SWITRS**
 
-The **Statewide Integrated Traffic Records System (SWITRS)** is the California Highway Patrol's (CHP) historical crash data format. It organizes collision occurrences into three separate flat tables:
+The **Statewide Integrated Traffic Records System (SWITRS)** is the California Highway Patrol's (CHP) crash data format. It organizes crash occurrences into three separate flat tables:
 
 * **Crash** (one row per crash)  
 * **Party** (one row per involved party, e.g., driver, pedestrian, bicyclist)  
 * **Victim** (one row per injured or killed person)
 
-*Note: SWITRS data is no longer available via the CHP's legacy I-SWITRS portal. Public access is primarily maintained through UC Berkeley's Transportation Injury Mapping System (TIMS). Many local law enforcement agencies maintain archival copies for historical analysis and litigation support.*
+*Note: Starting 1/8/2025, SWITRS data is no longer available via the CHP's I-SWITRS portal and is replaced by California Crash Reporting System (CCRS).*
 
 ### **2.2 CCRS**
 
-The **California Crash Reporting System (CCRS)** is the CHP's modern web platform replacing SWITRS, housing California's crash records from the past ten years. CCRS provides data in three corresponding export tables:
+The **California Crash Reporting System (CCRS)** is the CHP's new crash database that collects, and processes data gathered from a crash scene. CCRS provides data in three corresponding export tables:
 
 * **Crash** (corresponds to SWITRS crash)  
 * **Party** (corresponds to SWITRS party)  
@@ -61,8 +61,8 @@ This script reads three CCRS CSV data tables and an optional California Vehicle 
 | crash.csv | SWITRS-compatible crash table (one row per crash). |
 | party.csv | SWITRS-compatible party table (one row per party). |
 | victim.csv | SWITRS-compatible victim table (one row per injured or killed person). |
-| unmapped\_ccrs\_fields.csv | Archival file preserving modern CCRS-only fields that do not possess a logical SWITRS equivalent. |
-| data\_quality\_log.csv | Diagnostic log flagging collisions where actual IWP rows contradict the crash header's NumberKilled or NumberInjured field declarations. |
+| unmapped\_ccrs\_fields.csv | Archival file preserving CCRS-only fields that do not possess a logical SWITRS equivalent. |
+| data\_quality\_log.csv | Diagnostic log flagging crashes where actual IWP rows contradict the crash header's NumberKilled or NumberInjured field declarations. |
 
 ### **3.1 Command Usage**
 
@@ -87,7 +87,7 @@ python ccrs\_switrs\_converter.py \\
 
 The vc\_codes\_table.csv file maps raw California Vehicle Code (CVC) section strings to their corresponding two-digit SWITRS violation category codes used in the pcf\_viol\_category and oaf\_viol\_cat fields. 
 
-This lookup table was compiled by UC Berkeley **SafeTREC** by accessing the <a href="https://leginfo.legislature.ca.gov/faces/codesTOCSelected.xhtml?tocCode=VEH&tocTitle=+Vehicle+Code+-+VEH" target="_blank">CVC site</a>. The lookup table attempts to assign violation codes for all the relevant CVC, but is subject to errors. Also the CVC code is not static, so any new codes that are added will not be included in this file. If this file is not supplied during conversion, pcf\_viol\_category and oaf\_viol\_cat will remain empty in the converted output tables.
+This lookup table was compiled by **UC Berkeley SafeTREC** by accessing the <a href="https://leginfo.legislature.ca.gov/faces/codesTOCSelected.xhtml?tocCode=VEH&tocTitle=+Vehicle+Code+-+VEH" target="_blank">CVC site</a>. The lookup table attempts to assign violation codes for all the relevant CVC, but is subject to errors. Also the CVC code is not static, so any new codes that are added will not be included in this file. If this file is not supplied during conversion, pcf\_viol\_category and oaf\_viol\_cat will remain empty in the converted output tables.
 
 #### **Column Mapping Definitions:**
 
@@ -114,7 +114,7 @@ The script extracts numeric sections from free-text fields in CCRS (e.g., "VC 22
 
 ### **3.3 Data Quality Diagnostic Log (data\_quality\_log.csv)**
 
-Due to inconsistencies that occasionally occur in native CCRS exports, a diagnostic data\_quality\_log.csv is written on every run. It details collisions where row counts computed from the **IWP table** do not align with the crash header's stated NumberKilled and NumberInjured values.
+Due to inconsistencies that occasionally occur in native CCRS exports, a diagnostic data\_quality\_log.csv is written on every run. It details crashes where row counts computed from the **IWP table** do not align with the crash header's stated NumberKilled and NumberInjured values.
 
 * An empty log (only the header row) denotes complete data integrity.  
 * **IWP Count Higher:** Typically indicates the presence of duplicate victim rows within the source CCRS IWP file.  
@@ -141,7 +141,7 @@ Due to inconsistencies that occasionally occur in native CCRS exports, a diagnos
 
 *Note: The converter does not modify the source values. NumberKilled and NumberInjured in the crash output are written exactly as exported from CCRS, even when discrepancies are detected in the IWP table.*
 
-### **3.4 Accident Table Field Mappings**
+### **3.4 Crash Table Field Mappings**
 
 Below is the structured schema mapping from **CCRS to SWITRS**:
 
@@ -260,7 +260,7 @@ Below is the structured schema mapping from **CCRS to SWITRS**:
 
 ### **3.7 CCRS-Only Fields (unmapped\_ccrs\_fields.csv)**
 
-These fields from modern CCRS files have no historical SWITRS equivalent. The script archives them inside unmapped\_ccrs\_fields.csv, preserving the raw data and keying it by CollisionId and SourceTable for future reference.
+These fields from CCRS files have no SWITRS equivalent. The script archives them inside unmapped\_ccrs\_fields.csv, preserving the raw data and keying it by CollisionId and SourceTable for future reference.
 
 * **Crash Table:** ReportVersion, IsPreliminary, DispatchNotified, HasPhotographs, IsDeleted, JudicialDistrict, PreparedDate, PrimaryCollisionFactorIsCited, PrimaryCollisionPartyNumber, ReviewedDate, IsLocationReferToNarrative, IsAOIOneSameAsLocation, EvidenceNumber, CHP555Version, HasDigitalMediaFiles, ServerCreateTime, ServerModifiedTime.  
 * **Party Table:** IsOnDutyEmergencyVehicle, IsHitAndRun, AirbagCode, StreetOrHighwayName, SpeedLimit, DriverLicenseClass, DriverLicenseStateCode, Vehicle1Color, Lane, ThruLane, TotalLane, IsDREConducted, VehicleBodyTypeTextDescription, VehicleMakeTextDescription, SpecialPurposeVehicleIndicatorCode, PartyTypeTextDescription, InattentionTextDescription, OtherAssociateFactorTextDescription, DamageCodeTextDescription, DamageLocationDescription, DriveByShootingRelated, DrivenBySchoolEmpioyee, IsIncidentReportedToADA, VehicleInvolvedWithTextDescription, SobrietyTextDescription, SafetyEquipmentTextDescription, ProcessingStatusTextDescription.  
@@ -268,7 +268,7 @@ These fields from modern CCRS files have no historical SWITRS equivalent. The sc
 
 ## **4. SWITRS → CCRS Converter (switrs\_ccrs\_converter.py)**
 
-This script processes legacy SWITRS flat files and generates contemporary CCRS-structured tables.
+This script processes SWITRS flat files and generates CCRS-structured tables.
 
 ### **4.1 Command Usage**
 
@@ -363,7 +363,7 @@ Users should be aware of the following programmatic limitations when using these
 * **CHP Beat Tracking (chp\_beat\_type / beat\_type):** This data is not present in raw CCRS files and requires a custom CHP beat lookup reference mapping. These fields will be blank in SWITRS output.  
 * **Special Condition Codes (2, 5, 6):** SWITRS parameters 2 (State University), 5 (Vista Point or Rest Area), and 6 (Other Public Access) are derived from beat numbers. Since beat data is omitted from CCRS, these conditions cannot be reliably back-converted.  
 * **Officer and Financial Data:** Officer IDs (officer\_id) and financial responsibility indicators (finan\_respons) are entirely absent from CCRS exports.  
-* **Ramp Identifiers:** Both primary\_ramp and secondary\_ramp default to "-" (not stated), as these are manually input by legacy CHP clerks and do not exist in digital CCRS databases.  
+* **Ramp Identifiers:** Both primary\_ramp and secondary\_ramp default to "-" (not stated), as these are not exist in CCRS databases.  
 * **Deprecated SWITRS Metrics:** Caltrans administrative values (caltrans\_county, caltrans\_district, state\_route, route\_suffix, postmile\_prefix, location\_type, ramp\_intersection, chp\_road\_type) are not available in CCRS exports and are omitted from output.  
 * **Reverse Mapping sp\_info\_3:** During SWITRS → CCRS conversion, sp\_info\_3 (School Bus Related, code E) is omitted. Only sp\_info\_1 (Hazardous Materials) and sp\_info\_2 (Cell Phone codes 1/2/3/4/B/C/D) are encoded into the Special Information field.  
 * **Derived Casualty Columns:** Metric columns such as count\_mc\_killed or count\_ped\_injured are calculated directly from IWP/Victim records. If the source data contains duplicate records (refer to the data quality log), these counts may exceed stated casualty figures.
@@ -386,7 +386,8 @@ As California's crash data structures mature, field values and formats may chang
 
 **Reference Documentation:**
 
-* CHP Collision Investigation Manual (HPM 110.5)  
-* SWITRS Data Dictionary (Current as of 4/26/2022)  
-* SWITRS Raw Data Tables Excel Workbook
+* CHP Crash Investigation Manual (HPM 110.5)
+* SWITRS Data Dictionary
+* SWITRS Raw Data Template
+* CCRS Raw Data Template 
 * California Vehicle Code 
