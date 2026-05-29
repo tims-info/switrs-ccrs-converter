@@ -25,8 +25,8 @@ These scripts run natively in Python 3.8+ with **zero external library dependenc
 
 | Script | Direction | Purpose |
 | :---- | :---- | :---- |
-| **ccrs\_switrs\_converter.py** | CCRS → SWITRS | Converts CCRS raw data exports into SWITRS-compatible CSV files, enabling integration with historical SWITRS analytical models, tools, and databases. |
-| **switrs\_ccrs\_converter.py** | SWITRS → CCRS | Converts SWITRS data into contemporary CCRS structures, allowing historical datasets to be loaded directly into CCRS-focused pipelines. |
+| **ccrs\_switrs\_converter.py** | CCRS → SWITRS | Converts CCRS data into SWITRS-compatible CSV files, enabling integration with SWITRS analytical models, tools, and databases. |
+| **switrs\_ccrs\_converter.py** | SWITRS → CCRS | Converts SWITRS data into CCRS format, allowing SWITRS datasets to be loaded directly into CCRS-focused pipelines. |
 
 Both scripts process standard CSV data files and export structured CSV outputs.
 
@@ -50,11 +50,11 @@ The **California Crash Reporting System (CCRS)** is the CHP's new crash database
 * **Party** (corresponds to SWITRS party)  
 * **InjuredWitnessPassenger (IWP)** (corresponds to SWITRS victim)
 
-CCRS uses distinct field names, altered coding values, and new fields that have no legacy SWITRS equivalent. It also omits various pre-calculated or computed fields that previously existed in SWITRS. Conversion between these formats requires careful schema mapping and value recoding.
+CCRS uses distinct field names, altered coding values, and new fields that have no SWITRS equivalent. It also omits various pre-calculated or computed fields that exist in SWITRS. Conversion between these formats requires careful schema mapping and value recoding.
 
 ## **3. CCRS → SWITRS Converter (ccrs\_switrs\_converter.py)**
 
-This script reads three CCRS CSV data tables and an optional California Vehicle Code lookup table, yielding **five distinct output files**:
+This script reads three CCRS CSV data tables and an optional California Vehicle Code (CVC) lookup table, yielding **five distinct output files**:
 
 | Output File | Content |
 | :---- | :---- |
@@ -85,17 +85,16 @@ python ccrs\_switrs\_converter.py \\
 
 ### **3.2 Vehicle Code Lookup File (vc\_codes\_table.csv)**
 
-The vc\_codes\_table.csv file maps raw California Vehicle Code (CVC) section strings to their corresponding two-digit SWITRS violation category codes used in the pcf\_viol\_category and oaf\_viol\_cat fields. 
+The vc\_codes\_table.csv file maps raw CVC section strings to their corresponding two-digit SWITRS violation category codes used in the pcf\_viol\_category and oaf\_viol\_cat fields. 
 
-This lookup table was compiled by **UC Berkeley SafeTREC** by accessing the <a href="https://leginfo.legislature.ca.gov/faces/codesTOCSelected.xhtml?tocCode=VEH&tocTitle=+Vehicle+Code+-+VEH" target="_blank">CVC site</a>. The lookup table attempts to assign violation codes for all the relevant CVC, but is subject to errors. Also the CVC code is not static, so any new codes that are added will not be included in this file. If this file is not supplied during conversion, pcf\_viol\_category and oaf\_viol\_cat will remain empty in the converted output tables.
+This lookup table was compiled by **UC Berkeley SafeTREC** by accessing the <a href="https://leginfo.legislature.ca.gov/faces/codesTOCSelected.xhtml?tocCode=VEH&tocTitle=+Vehicle+Code+-+VEH" target="_blank">CVC site</a>. The lookup table attempts to assign violation codes for all the relevant CVC, but is subject to errors. The CVC code is not static, so any new codes that are added in the future will not be included in this file. If this file is not supplied during conversion, pcf\_viol\_category and oaf\_viol\_cat will remain empty in the converted output tables.
 
 #### **Column Mapping Definitions:**
 
-* vc\_code (Integer): The base numeric CVC section (e.g., 22107, 23152).  
-* sub (String): The subsection letter suffix, or 0 if none exists (e.g., A for 23152A).  
-* pcf (String): Two-digit SWITRS pcf\_viol\_category code (e.g., 01, 03, 07, 08, 13).  
-* oaf (String): Two-digit SWITRS oaf\_viol\_cat code (e.g., 20, 25, 28, 31, 38).  
-* id (Integer): Internal unique row identifier.  
+* vc\_code (Integer): The base numeric CVC section (e.g., 22107, 23152).
+* sub (String): The subsection letter suffix, or 0 if none exists (e.g., A for 23152A).
+* pcf (String): Two-digit SWITRS pcf\_viol\_category code (e.g., 01, 03, 07, 08, 13).
+* oaf (String): Two-digit SWITRS oaf\_viol\_cat code (e.g., 20, 25, 28, 31, 38).
 * vc\_code\_full (String): Combined canonical identifier (e.g., 22107, 21658A, 23152A).
 
 #### **Sample Rows:**
@@ -114,7 +113,7 @@ The script extracts numeric sections from free-text fields in CCRS (e.g., "VC 22
 
 ### **3.3 Data Quality Diagnostic Log (data\_quality\_log.csv)**
 
-Due to inconsistencies that occasionally occur in native CCRS exports, a diagnostic data\_quality\_log.csv is written on every run. It details crashes where row counts computed from the **IWP table** do not align with the crash header's stated NumberKilled and NumberInjured values.
+Due to inconsistencies that occasionally occur in CCRS records, a diagnostic data\_quality\_log.csv is written on every run. It details crashes where row counts computed from the **IWP table** do not align with the crash header's stated NumberKilled and NumberInjured values.
 
 * An empty log (only the header row) denotes complete data integrity.  
 * **IWP Count Higher:** Typically indicates the presence of duplicate victim rows within the source CCRS IWP file.  
@@ -202,8 +201,8 @@ Below is the structured schema mapping from **CCRS to SWITRS**:
 | count\_mc\_injured | IWP \+ Party Vehicle Type | Count of injured motorcyclist IWP rows (matching party vehicle type C or O). |
 | postmile | MilepostDistance | Direct mapping. |
 | side\_of\_hwy | MilepostDirection | Direct mapping. |
-| primary\_ramp | N/A | Always "-" (not captured in CCRS exports). |
-| secondary\_ramp | N/A | Always "-" (not captured in CCRS exports). |
+| primary\_ramp | N/A | Always "-" (not available in CCRS). |
+| secondary\_ramp | N/A | Always "-" (not available in CCRS). |
 | latitude / longitude | Latitude / Longitude | Direct mapping. |
 | local\_report\_number | Report Number | Direct mapping. |
 
@@ -268,7 +267,7 @@ These fields from CCRS files have no SWITRS equivalent. The script archives them
 
 ## **4. SWITRS → CCRS Converter (switrs\_ccrs\_converter.py)**
 
-This script processes SWITRS flat files and generates CCRS-structured tables.
+This script processes SWITRS flat files and generates CCRS-structured outputs.
 
 ### **4.1 Command Usage**
 
@@ -360,11 +359,11 @@ Due to differences in the information captured by the two systems, some CCRS fie
 
 Users should be aware of the following programmatic limitations when using these converters:
 
-* **CHP Beat Tracking (chp\_beat\_type / beat\_type):** This data is not present in raw CCRS files and requires a custom CHP beat lookup reference mapping. These fields will be blank in SWITRS output.  
+* **CHP Beat Tracking (chp\_beat\_type / beat\_type):** This data is not present in CCRS files and requires a custom CHP beat lookup reference mapping. These fields will be blank in SWITRS output.  
 * **Special Condition Codes (2, 5, 6):** SWITRS parameters 2 (State University), 5 (Vista Point or Rest Area), and 6 (Other Public Access) are derived from beat numbers. Since beat data is omitted from CCRS, these conditions cannot be reliably back-converted.  
-* **Officer and Financial Data:** Officer IDs (officer\_id) and financial responsibility indicators (finan\_respons) are entirely absent from CCRS exports.  
-* **Ramp Identifiers:** Both primary\_ramp and secondary\_ramp default to "-" (not stated), as these are not exist in CCRS databases.  
-* **Deprecated SWITRS Metrics:** Caltrans administrative values (caltrans\_county, caltrans\_district, state\_route, route\_suffix, postmile\_prefix, location\_type, ramp\_intersection, chp\_road\_type) are not available in CCRS exports and are omitted from output.  
+* **Officer and Financial Data:** Officer IDs (officer\_id) and financial responsibility indicators (finan\_respons) are not available in CCRS.  
+* **Ramp Identifiers:** Both primary\_ramp and secondary\_ramp default to "-" (not stated), as these are not available in CCRS.  
+* **Deprecated SWITRS Metrics:** Caltrans administrative values (caltrans\_county, caltrans\_district, state\_route, route\_suffix, postmile\_prefix, location\_type, ramp\_intersection, chp\_road\_type) are not available in CCRS and are omitted from output.  
 * **Reverse Mapping sp\_info\_3:** During SWITRS → CCRS conversion, sp\_info\_3 (School Bus Related, code E) is omitted. Only sp\_info\_1 (Hazardous Materials) and sp\_info\_2 (Cell Phone codes 1/2/3/4/B/C/D) are encoded into the Special Information field.  
 * **Derived Casualty Columns:** Metric columns such as count\_mc\_killed or count\_ped\_injured are calculated directly from IWP/Victim records. If the source data contains duplicate records (refer to the data quality log), these counts may exceed stated casualty figures.
 
@@ -377,7 +376,7 @@ Users should be aware of the following programmatic limitations when using these
 
 ## **7. Support and Updates**
 
-As California's crash data structures mature, field values and formats may change. If a converted field is unexpectedly blank:
+As California's crash data formats mature, field values and formats may change. If a converted field is unexpectedly blank:
 
 1. Verify if your CSV files contain non-standard header column names. Check the FIELD MAPPING REFERENCE block at the top of the python scripts.  
 2. Ensure you have provided vc\_codes\_table.csv to successfully populate violation fields.  
