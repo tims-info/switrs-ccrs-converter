@@ -1,8 +1,8 @@
 """
 SWITRS → CCRS Format Converter
 ================================
-Converts legacy SWITRS-format CSV files into the California Crash Reporting
-System (CCRS) raw data export format.
+Converts SWITRS format CSV files into the California Crash Reporting
+System (CCRS) data format.
 
 SWITRS tables:  crash, party, victim
 CCRS tables:    Crash, Party, InjuredWitnessPassenger (IWP)
@@ -75,7 +75,7 @@ from datetime import datetime
 
 # ---------------------------------------------------------------------------
 # EMBEDDED CITY / COUNTY LOOKUP TABLE
-# Source: SWITRS_Raw_Data_Tables.xlsx -- cnty_city_loc sheet
+# Source: SWITRS Raw Data Tables.xlsx -- cnty_city_loc sheet
 # ---------------------------------------------------------------------------
 
 _CNTY_CITY_LOC_RAW = [
@@ -320,7 +320,7 @@ CNTY_CITY_LOOKUP = {code: desc for code, desc in _CNTY_CITY_LOC_RAW}
 
 # ---------------------------------------------------------------------------
 # CHP VEHICLE TYPE LOOKUP TABLE
-# Source: SWITRS_Raw_Data_Tables.xlsx -- CHP_vehicle_type sheet
+# Source: SWITRS Raw Data Tables.xlsx -- CHP_vehicle_type sheet
 # Keys are zero-padded 2-digit strings matching chp_veh_type_towing/towed values.
 # ---------------------------------------------------------------------------
 
@@ -996,27 +996,15 @@ def convert_party_to_ccrs(party_rows, hit_run_map=None):
             "4": "CELL PHONE USE UNKNOWN",
             "E": "SCHOOL BUS RELATED (1/1/02)",
         }
-        # SWITRS sp_info_1 is "A" or blank/dash; sp_info_2 is "1"-"4","B"-"D" or blank/dash;
-        # sp_info_3 is "E" or blank/dash. The forward converter had a substring bug that
-        # set sp_info_3="E" whenever the letter E appeared anywhere in the source text,
-        # so many records incorrectly carry sp_info_3="E". Only accept exact single-char
-        # codes that are valid keys in _SP_INFO_MAP; reject anything else (including
-        # values that are clearly artefacts of the forward converter bug, i.e. anything
-        # longer than one character or not a recognised code).
-        # sp_info_1: "A" (Hazardous Materials) or blank/dash -- safe to use directly.
-        # sp_info_2: "1"-"4","B","C","D" (cell phone codes) or blank/dash -- safe.
-        # sp_info_3: intended to be "E" (School Bus Related) or blank, BUT the forward
-        #   converter used `"E" in sp_raw` (substring match) rather than a token check,
-        #   and EVERY CCRS Special Information description text contains the letter "E"
-        #   (e.g. "CELL PHONE NOT IN USE", "HAZARDOUS MATERIALS"). This means sp_info_3
-        #   is set to "E" on virtually every party row that had any Special Information
-        #   at all -- so it cannot be trusted. We suppress sp_info_3 entirely to avoid
-        #   generating spurious "SCHOOL BUS RELATED" values on non-school-bus records.
+
+        # sp_info_1: "A" (Hazardous Materials) or blank/dash.
+        # sp_info_2: "1"-"4","B","C","D" (cell phone codes) or blank/dash.
+        # sp_info_3: set to blank, 
+        
         _NULL_VALUES = {"", "-", " "}
         sp_codes = [
             row.get("sp_info_1", "").strip(),   # A or blank/dash
             row.get("sp_info_2", "").strip(),   # 1-4, B-D, or blank/dash
-            # sp_info_3 intentionally omitted -- see note above
         ]
         sp_parts = [
             _SP_INFO_MAP[c] for c in sp_codes
