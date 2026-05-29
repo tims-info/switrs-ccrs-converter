@@ -1,8 +1,8 @@
 """
 CCRS → SWITRS Format Converter
 ================================
-Converts California Crash Reporting System (CCRS) raw data exports
-into the legacy SWITRS-compatible format.
+Converts California Crash Reporting System (CCRS) data
+into the SWITRS compatible format.
 
 CCRS tables:  Crash, Party, InjuredWitnessPassenger (IWP)
 SWITRS tables: crash, party, victim
@@ -733,7 +733,7 @@ def intersection_flag(primary_rd, secondary_rd, distance):
 
 def worst_injury(injury_list):
     """
-    Return the SWITRS collision_severity code for the worst injury in a list.
+    Return the SWITRS collision_severity code for the most severe injury in a list.
     injury_list now contains degree codes ("0"-"7") already resolved by build_lookups.
     """
     # collision_severity uses 1-4 scale (1=fatal, 2=severe, 3=visible, 4=pain, 0=none)
