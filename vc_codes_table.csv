@@ -1,0 +1,880 @@
+vc_code,sub,pcf,oaf,vc_code_full,description
+25,0,0,47,25,General - false personation of CHP officer
+26,0,0,47,26,General - impersonating a peace officer
+27,0,0,47,27,General - impersonating a CHP officer
+28,0,0,47,28,General - failure to comply with lawful order
+31,0,0,47,31,General - false information to a peace officer
+2261,0,0,47,2261,Administration - false statement to DMV
+2504,0,0,47,2504,Administration - driving without registration
+2800,0,17,44,2800,Administration - failure to obey peace officer
+2801,0,17,44,2801,Administration - failure to obey traffic officer signal
+2813,0,0,47,2813,Administration - vehicle weighing at roadside requirement
+2814,0,0,47,2814,Administration - sobriety checkpoint authority
+2815,0,17,44,2815,Administration - license checkpoint authority
+2817,0,17,44,2817,Administration - commercial vehicle inspection authority
+2818,0,0,44,2818,Administration - school bus inspection authority
+4159,0,0,46,4159,Registration - vehicle identification number requirements
+4160,0,0,46,4160,Registration - assigned vehicle ID number requirement
+4301,0,0,46,4301,Registration - license plate required
+4455,0,0,46,4455,Registration - display of registration documents required
+4457,0,0,46,4457,Registration - fictitious registration documents
+4458,0,0,46,4458,Registration - altered registration documents
+4459,0,0,46,4459,Registration - counterfeit registration documents
+4461,0,0,46,4461,Registration - use of another person's registration
+4464,0,0,46,4464,Registration - fictitious license plate
+5017,0,0,46,5017,Registration - personalized license plate requirements
+5109,0,0,46,5109,Registration - environmental license plate rules
+5200,0,0,46,5200,Registration - license plate front and rear required
+5201,0,0,46,5201,Registration - license plate display requirements
+5202,0,0,46,5202,Registration - license plate illumination required
+5206,0,0,46,5206,Registration - license plate frame restriction
+5352,0,0,46,5352,Registration - special license plate conditions
+5753,0,0,46,5753,Registration - motorcycle license plate display requirement
+6855,0,0,46,6855,Registration - bicycle registration requirement
+8008,0,0,46,8008,Registration - vessel registration card display requirement
+8802,0,0,46,8802,Registration - vessel number display requirement
+8803,0,0,46,8803,Registration - vessel certificate display requirement
+9850,0,0,46,9850,Registration - vessel registration required
+9853,0,0,46,9853,Registration - vessel number display required
+9854,0,0,46,9854,Registration - vessel registration certificate required
+9865,0,0,46,9865,Registration - vessel registration renewal
+9866,0,0,46,9866,Registration - vessel registration transfer
+9872,0,0,46,9872,Registration - vessel lighting requirement
+9875,0,0,46,9875,Registration - vessel safety equipment requirement
+9901,0,0,46,9901,Registration - vessel operation requirements
+10852,0,0,47,10852,Antitheft - tampering with a vehicle
+10853,0,DO,47,10853,Antitheft - malicious mischief to a vehicle
+10854,0,0,47,10854,Antitheft - taking vehicle without consent for temporary use
+11100,0,0,47,11100,Occupational - dealer license - general requirement
+11103,0,0,47,11103,Occupational - dealer established place of business required
+11109,0,0,47,11109,Occupational - dealer license revocation grounds
+11300,0,0,47,11300,Occupational - vehicle salesperson license required
+11700,0,0,46,11700,Occupational - auto broker license required
+12511,0,0,47,12511,Driver license - minor driving without license
+12516,0,17,44,12516,Driver license - minor operating commercial vehicle
+12517,0,0,47,12517,Driver license - school bus driver certification required
+12815,0,0,47,12815,Driver license - failure to surrender suspended license
+13003,0,0,47,13003,Identification card - unlawful use of identification card
+13007,0,0,47,13007,Driver license - failure to report change of address
+14603,0,17,44,14603,Driver license - driving in violation of license restriction
+14610,0,0,47,14610,Driver license - license fraud/alteration - general
+15501,0,0,47,15501,Minor vehicle transaction - prohibition on vehicle sales to minors
+16560,0,0,47,16560,Financial responsibility - uninsured motorist - license suspension
+21203,0,17,44,21203,Bicycle - attaching to vehicle - hitchhiking prohibition
+21205,0,17,44,21205,Bicycle - carrying articles - obstructing control prohibition
+21210,0,0,34,21210,Bicycle - parking on sidewalk prohibition
+21455,0,12,23,21455,Traffic signal - official traffic control device - obedience required
+21462,0,17,44,21462,Traffic device - traffic control signal - obedience required
+21463,0,17,47,21463,Traffic device - traffic control device - local authority
+21465,0,17,47,21465,Traffic device - unauthorized traffic control device prohibition
+21466,0,17,47,21466,Traffic device - lighting impairing driver vision prohibition
+22507,8,0,38,225078,"Parking - preferential zone restriction, sub (.8)"
+22515,A,13,38,22515A,"Parking - unattended vehicle brake/gear requirement, sub (a)"
+22523,A,0,47,22523A,"Parking - abandoned vehicle prohibition, sub (a)"
+22526,A,2,22,22526A,"Parking - blocking intersection/crosswalk (gridlock) prohibited, sub (a)"
+22952,A,0,47,22952A,"Parking lot - 15 mph speed limit posted requirement, sub (a)"
+23103,A,0,26,23103A,"Reckless driving, sub (a)"
+23104,A,0,26,23104A,"Reckless driving causing bodily injury, sub (a)"
+23109,A,17,44,23109A,"Speed contest (racing) on highway, sub (a)"
+23110,A,17,47,23110A,"Throwing substance at vehicle on highway, sub (a)"
+23112,A,17,47,23112A,"Dumping material on highway, sub (a)"
+23113,A,0,47,23113A,"Removal of dumped material - driver duty, sub (a)"
+23114,A,17,44,23114A,"Spilling load on highway violation, sub (a)"
+23116,A,17,44,23116A,"Transporting person in truck bed prohibited, sub (a)"
+23117,A,17,47,23117A,"Transporting animal in vehicle - cruelty prohibition, sub (a)"
+23128,A,17,44,23128A,"Motor vehicle on public lands - speed restriction, sub (a)"
+23130,A,0,49,23130A,"Driving on closed road prohibition, sub (a)"
+23152,A,1,20,23152A,"DUI - alcohol - driving while under the influence, sub (a)"
+23153,A,1,20,23153A,"DUI causing bodily injury - alcohol, sub (a)"
+23222,A,0,47,23222A,"Alcohol/marijuana - open container in vehicle, sub (a)"
+23224,A,0,47,23224A,"Alcohol - minor possessing alcohol in vehicle, sub (a)"
+23270,A,17,44,23270A,"Vehicular crossing - towing vehicle rules, sub (a)"
+23330,A,17,47,23330A,"Toll road - prohibited acts, sub (a)"
+24002,A,16,43,24002A,"Equipment - adequate brakes required, sub (a)"
+24015,A,16,43,24015A,"Equipment - headlamp aim requirement, sub (a)"
+24252,A,14,39,24252A,"Equipment - headlamp requirements, sub (a)"
+24253,A,14,39,24253A,"Equipment - headlamp specifications, sub (a)"
+24402,A,17,44,24402A,"Equipment - auxiliary driving/passing lamps, sub (a)"
+24404,A,17,44,24404A,"Equipment - foglamp requirements, sub (a)"
+24405,A,17,44,24405A,"Equipment - turn signal lamp requirements, sub (a)"
+24407,A,14,39,24407A,"Equipment - signal lamp visibility, sub (a)"
+24408,A,14,39,24408A,"Equipment - signal lamp color, sub (a)"
+24409,A,17,44,24409A,"Equipment - headlamp color requirement, sub (a)"
+24410,A,14,39,24410A,"Equipment - reflector requirements, sub (a)"
+24600,A,14,39,24600A,"Equipment - taillamp requirements, sub (a)"
+24600,E,14,39,24600E,"Equipment - taillamp requirements, sub (e)"
+24603,A,14,39,24603A,"Equipment - stop lamp requirements, sub (a)"
+24603,E,14,39,24603E,"Equipment - stop lamp requirements, sub (e)"
+24605,A,14,39,24605A,"Equipment - license plate lamp requirements, sub (a)"
+24606,A,14,39,24606A,"Equipment - backup lamp requirements, sub (a)"
+24607,A,14,39,24607A,"Equipment - turn signal lamp, sub (a)"
+24608,A,14,39,24608A,"Equipment - hazard lamp requirements, sub (a)"
+24951,B,14,39,24951B,"Equipment - brake performance standard, sub (b)"
+24953,A,14,39,24953A,"Equipment - parking brake requirement, sub (a)"
+25100,A,14,39,25100A,"Equipment - clearance/marker lamp front, sub (a)"
+25100,F,14,39,25100F,"Equipment - clearance/marker lamp front, sub (f)"
+25103,A,14,39,25103A,"Equipment - lamp placement requirements, sub (a)"
+25105,A,14,39,25105A,"Equipment - lighting on projecting loads, sub (a)"
+25106,A,14,39,25106A,"Equipment - lighting on wide loads, sub (a)"
+25108,A,14,39,25108A,"Equipment - pilot car lighting requirements, sub (a)"
+25257,A,14,39,25257A,"Equipment - motorcycle reflectors, sub (a)"
+25260,4,17,47,252604,"Equipment - special reflector requirements, sub (.4)"
+25276,A,17,47,25276A,"Equipment - retroreflective material color, sub (a)"
+25300,A,16,43,25300A,"Equipment - clearance lamp color requirements, sub (a)"
+25301,A,17,47,25301A,"Equipment - identification lamp color, sub (a)"
+25305,A,0,47,25305A,"Equipment - lamp restrictions, sub (a)"
+25351,A,14,39,25351A,"Equipment - flashing warning lamp, sub (a)"
+25352,B,16,43,25352B,"Equipment - amber warning lamp, sub (b)"
+25400,B,14,39,25400B,"Equipment - flashing amber warning lamp, sub (b)"
+25500,A,14,39,25500A,"Equipment - siren restriction - non-emergency vehicles, sub (a)"
+25651,A,14,39,25651A,"Equipment - turn signal lamp specifications, sub (a)"
+25803,A,14,39,25803A,"Equipment - brake light visibility requirement, sub (a)"
+25950,A,14,39,25950A,"Equipment - windshield material requirements, sub (a)"
+21650,0,5,27,21650,Driving - right side of road - required
+21652,0,17,44,21652,Driving - entering highway - yield required
+21656,0,2,22,21656,Driving - slow vehicle - turnout required
+21657,0,17,44,21657,Driving - designated lanes - use requirement
+21659,0,0,21,21659,Driving - three-lane highway - rules
+21660,0,5,27,21660,Driving - approaching vehicles - headlights required
+21661,0,9,33,21661,Driving - right of way on narrow mountain road
+21663,0,17,44,21663,Driving - driving on sidewalk prohibited
+21664,0,17,44,21664,Driving - freeway - entering/exiting rules
+21700,0,17,44,21700,Driving - obstructed driver vision/control - prohibited
+21701,0,17,44,21701,Driving - interference with driver - prohibited
+21703,0,4,30,21703,Driving - following too closely prohibited
+21705,0,4,30,21705,Driving - caravan spacing - convoy rules
+21706,0,4,30,21706,Driving - following emergency vehicle - prohibited
+21707,0,17,44,21707,Driving - driving in fire area - prohibited
+21708,0,17,44,21708,Driving - crossing fire hose - prohibited
+21709,0,17,44,21709,Driving - safety zone - driving through prohibited
+21710,0,17,44,21710,Driving - coasting out of gear - prohibited
+21711,0,17,44,21711,Driving - towed vehicle - swerving prohibition
+21713,0,0,47,21713,Driving - special construction equipment rules
+21716,0,17,44,21716,Driving - towing motor vehicle - safety chain required
+21717,0,8,31,21717,Driving - U-turn in business district - signal required
+21750,0,6,29,21750,Passing - overtaking on left side required
+21751,0,6,29,21751,Passing - passing on left side only
+21753,0,17,44,21753,Passing - overtaken vehicle - yield required
+21754,0,6,29,21754,Passing - passing on right - permissible conditions
+21755,0,6,29,21755,Passing - passing on right - when permitted
+21757,0,6,29,21757,Passing - passing streetcar - prohibited
+21758,0,6,29,21758,Passing - passing vehicle on grade - rules
+21759,0,6,29,21759,Passing - passing animal on road - required care
+21951,0,6,29,21951,Pedestrian - passing vehicle stopped for pedestrian - prohibited
+21952,0,10,34,21952,Pedestrian - driver yield to blind pedestrian required
+21953,0,11,35,21953,Pedestrian - use of pedestrian tunnel/overhead crossing
+21955,0,11,35,21955,Pedestrian - crossing between controlled intersections - prohibited
+21956,0,11,35,21956,Pedestrian - walking on roadway rules
+21957,0,11,35,21957,Pedestrian - hitchhiking on roadway - prohibited
+21959,0,11,35,21959,Pedestrian - skiing/sledding on roadway - prohibited
+21963,0,10,34,21963,Pedestrian - blind person right of way
+21964,0,11,35,21964,Pedestrian - white cane right of way rules
+25952,A,14,39,25952A,"Equipment - side window requirements, sub (a)"
+26302,A,15,40,26302A,"Equipment - brake hose requirements, sub (a)"
+26304,A,15,40,26304A,"Equipment - wheel cylinder requirements, sub (a)"
+26311,A,15,40,26311A,"Equipment - brake adjustment requirement, sub (a)"
+21966,0,11,35,21966,Pedestrian - bicycle path - walking rules
+21968,0,17,44,21968,Pedestrian - motorized vehicle on bicycle path prohibited
+26451,A,15,40,26451A,"Equipment - service brake performance standard, sub (a)"
+26454,A,15,40,26454A,"Equipment - parking brake requirement, sub (a)"
+22102,0,8,. ,22102,Turning - U-turn in business district - general rules
+22103,0,8,31,22103,Turning - U-turn in residential district
+22104,0,8,31,22104,Turning - U-turn near fire station - prohibited
+22105,0,8,31,22105,Turning - U-turn - visibility 200 feet required
+22106,0,21,53,22106,Turning - starting/backing - safe movement required
+26502,A,15,40,26502A,"Equipment - steering system requirements, sub (a)"
+22107,0,8,31,22107,Turning - unsafe turn - signal required
+22108,0,8,31,22108,Turning - turn signal - 100 feet before turn required
+22109,0,17,44,22109,Turning - signal before stopping required
+26506,A,15,40,26506A,"Equipment - steering component requirements, sub (a)"
+22110,0,16,43,22110,Turning - signal - mechanical or electrical device required
+22112,0,17,44,22112,Turning - school bus - signal arm requirements
+26508,A,15,40,26508A,"Equipment - wheel/rim requirements, sub (a)"
+26508,G,15,40,26508G,"Equipment - wheel/rim requirements, sub (g)"
+22350,0,3,25,22350,Speed - basic speed law - unsafe speed prohibited
+26508,K,15,40,26508K,"Equipment - wheel/rim requirements, sub (k)"
+22407,0,3,25,22407,Speed - towing vehicle combination - speed limit
+26700,A,16,43,26700A,"Equipment - windshield required - general, sub (a)"
+22409,0,3,25,22409,Speed - solid tire vehicle - speed limit
+22410,0,3,25,22410,Speed - metal tire vehicle - speed limit
+26701,A,16,43,26701A,"Equipment - windshield glass requirements, sub (a)"
+26701,E,16,43,26701E,"Equipment - windshield glass requirements, sub (e)"
+22450,0,12,24,22450,Stop required - stop sign/limit line compliance
+26703,A,16,43,26703A,"Equipment - side/rear window glass, sub (a)"
+22510,0,13,38,22510,Parking - snow removal zone restriction
+26706,A,16,43,26706A,"Equipment - side window tinting restriction, sub (a)"
+26708,A,16,43,26708A,"Equipment - window obstruction/sticker restriction, sub (a)"
+26709,A,16,43,26709A,"Equipment - rear view mirror driver side required, sub (a)"
+22513,0,13,38,22513,Parking - tow truck notification requirements
+27000,A,16,43,27000A,"Equipment - horn requirement, sub (a)"
+22514,0,13,38,22514,Parking - fire hydrant - 15 foot clearance required
+27001,A,17,44,27001A,"Equipment - horn use restriction, sub (a)"
+27150,A,16,49,27150A,"Equipment - exhaust system requirements, sub (a)"
+27314,5,0,47,273145,"Equipment - mudguard material requirement, sub (.5)"
+27315,D,17,62,27315D,"Equipment - seat belt requirement, sub (d)"
+27450,A,16,43,27450A,"Equipment - tire chain requirement, sub (a)"
+22516,0,0,47,22516,Parking - person locked in vehicle - driver duty
+27455,B,0,47,27455B,"Equipment - tire width requirements, sub (b)"
+27465,B,16,43,27465B,"Equipment - tire tread depth requirement, sub (b)"
+27501,B,16,43,27501B,"Equipment - mudguards/mudflaps requirement, sub (b)"
+21116,A,17,44,21116A,"Local regulation - highway closure by local authority, sub (a)"
+21200,5,1,20,212005,"Bicycle - DUI on bicycle, sub (.5)"
+21201,A,15,40,21201A,"Bicycle - equipment - brakes required, sub (a)"
+21202,A,17,44,21202A,"Bicycle - riding as far to the right as practicable, sub (a)"
+21204,A,17,44,21204A,"Bicycle - required seating for riders, sub (a)"
+21207,5,17,44,212075,"Bicycle - motorized bicycle on bicycle path, sub (.5)"
+21208,A,17,21,21208A,"Bicycle - bicycle lane - required use, sub (a)"
+21209,A,17,21,21209A,"Bicycle - motor vehicle in bicycle lane, sub (a)"
+21211,A,0,38,21211A,"Bicycle - bicycle lane obstruction prohibition, sub (a)"
+21367,B,12,23,21367B,"Traffic device - vandalism of traffic control device, sub (b)"
+21451,A,17,44,21451A,"Traffic signal - green signal - proceed lawfully, sub (a)"
+21452,B,12,23,21452B,"Traffic signal - yellow signal - stop required, sub (b)"
+21453,A,12,23,21453A,"Traffic signal - red signal - stop required, sub (a)"
+21454,C,17,44,21454C,"Traffic signal - flashing green - rules, sub (c)"
+27700,A,16,43,27700A,"Equipment - load cover requirement, sub (a)"
+27801,A,16,43,27801A,"Equipment - motorcycle passenger seat requirement, sub (a)"
+27803,B,0,44,27803B,"Equipment - motorcycle helmet passenger required, sub (b)"
+27904,5,0,47,279045,"Equipment - motorcycle equipment requirement, sub (.5)"
+28050,5,0,47,280505,"Equipment - miscellaneous equipment requirement, sub (.5)"
+28060,B,16,43,28060B,"Equipment - emission control system, sub (b)"
+28080,A,16,43,28080A,"Equipment - fuel system vapor recovery, sub (a)"
+28085,C,16,43,28085C,"Equipment - gas cap requirement, sub (c)"
+29003,A,16,43,29003A,"Towing - hitch/coupling requirement, sub (a)"
+29004,A,16,43,29004A,"Towing - safety chain requirement, sub (a)"
+29006,A,16,43,29006A,"Towing - brakes on towed vehicle required, sub (a)"
+29200,C,16,43,29200C,"Towing - drawbar length limit, sub (c)"
+29800,C,16,43,29800C,"Loading - load securement requirement, sub (c)"
+30800,B,16,43,30800B,"Loading - log/pole load securement, sub (b)"
+31301,A,17,44,31301A,"Loading - hazardous cargo regulations, sub (a)"
+31303,A,17,44,31303A,"Loading - explosive transport regulations, sub (a)"
+31400,A,16,43,31400A,"Loading - passenger vehicle load limit, sub (a)"
+31401,B,0,47,31401B,"Loading - projecting load regulations, sub (b)"
+31510,D,16,43,31510D,"Loading - vehicle transport special requirements, sub (d)"
+31520,B,16,43,31520B,"Loading - mobile home transport requirement, sub (b)"
+31530,B,16,43,31530B,"Loading - manufactured home transport requirement, sub (b)"
+31540,B,16,43,31540B,"Loading - vehicle transport tie-down requirement, sub (b)"
+31602,A,0,47,31602A,"Explosives - transport permit conditions, sub (a)"
+31610,A,16,43,31610A,"Explosives - transport regulations, sub (a)"
+31610,E,16,43,31610E,"Explosives - transport regulations, sub (e)"
+31614,A,17,44,31614A,"Explosives - warning device requirement, sub (a)"
+31614,E,17,44,31614E,"Explosives - warning device requirement, sub (e)"
+31614,I,17,44,31614I,"Explosives - warning device requirement, sub (i)"
+32052,A,0,47,32052A,"Hazmat - radioactive material transport prohibition, sub (a)"
+34501,2,0,44,345012,"Safety regulations - terminal inspection program, sub (.2)"
+34506,F,16,43,34506F,"Safety regulations - hours of service violation, sub (f)"
+22517,0,17,47,22517,Parking - opening door into traffic - prohibited
+22520,0,13,38,22520,Parking - freeway parking prohibited
+22521,0,13,38,22521,Parking - freeway ramp parking prohibited
+22522,0,13,38,22522,Parking - within 3 feet of curb ramp prohibited
+22650,0,0,47,22650,Parking - abandoned vehicle - authority to remove from highway
+22951,0,0,47,22951,Parking lot - traffic rules applicability
+23111,0,17,47,23111,Throwing lighted substance from vehicle prohibited
+23115,0,17,44,23115,Rubbish vehicle - covering load required
+23120,0,17,44,23120,Driving wearing earplugs/headset prohibited
+23127,0,0,47,23127,Driving motor vehicle on trail/path prohibited
+23129,0,17,44,23129,Truck restriction on certain highway roads
+23135,0,16,43,23135,Driving under influence of drugs (historical provision)
+23220,0,0,47,23220,Alcohol - drinking in moving vehicle prohibited
+23221,0,0,47,23221,Alcohol - passenger drinking in vehicle prohibited
+23223,0,0,47,23223,Alcohol - open container in vehicle - driver prohibition
+23225,0,0,47,23225,Alcohol - open container storage requirement
+23226,0,0,47,23226,Alcohol - open container in passenger area
+23253,0,17,44,23253,Vehicular crossing - obedience to traffic officers required
+23302,0,17,44,23302,Toll evasion - evading toll payment prohibited
+23330,0,17,47,23330,Toll road - prohibited acts on toll road - general
+23331,0,11,35,23331,Toll road - pedestrian prohibition on toll road
+23332,0,17,47,23332,Toll road - stopping/standing prohibition
+23333,0,13,38,23333,Toll road - parking/abandoned vehicle prohibition
+23336,0,17,44,23336,Toll road - local authority jurisdiction
+24003,0,14,39,24003,Equipment - speedometer requirement
+24004,0,17,44,24004,Equipment - odometer requirement
+34507,5,0,47,345075,"Safety regulations - carrier identification requirement, sub (.5)"
+24005,0,0,47,24005,Equipment - vehicle identification number requirement
+24008,0,16,43,24008,Equipment - windshield wiper requirement
+35104,A,0,51,35104A,"Size/weight - load width permit, sub (a)"
+24012,0,14,39,24012,Equipment - motorcycle headlamp requirement
+35250,A,17,51,35250A,"Size/weight - vehicle height limit, sub (a)"
+24250,0,17,44,24250,Equipment - lighting required during darkness/inclement weather
+35400,A,0,51,35400A,"Size/weight - vehicle length limit, sub (a)"
+35401,A,0,51,35401A,"Size/weight - vehicle combination length limit, sub (a)"
+35406,A,0,51,35406A,"Size/weight - truck/trailer combination length, sub (a)"
+24400,0,14,39,24400,Equipment - headlamp visibility distance required
+35411,A,0,51,35411A,"Size/weight - bus length limit, sub (a)"
+24401,0,17,44,24401,Equipment - single headlamp requirement
+35550,A,0,50,35550A,"Size/weight - gross vehicle weight limit, sub (a)"
+24403,0,14,39,24403,Equipment - spot lamp restriction
+35551,A,0,50,35551A,"Size/weight - gross vehicle weight limit, sub (a)"
+24406,0,14,39,24406,Equipment - interior lamp restrictions
+35552,A,0,50,35552A,"Size/weight - axle weight limit, sub (a)"
+35655,A,0,50,35655A,"Size/weight - special permit vehicle requirements, sub (a)"
+24411,0,14,39,24411,"Equipment - turn signal - vehicles 14,000 lbs or over"
+35753,A,0,50,35753A,"Size/weight - manufactured home transport permit, sub (a)"
+35784,A,17,44,35784A,"Size/weight - special transport speed limit, sub (a)"
+35785,B,3,25,35785B,"Size/weight - special transport daylight restriction, sub (b)"
+24601,0,14,39,24601,Equipment - taillamp visibility requirement
+35786,B,17,44,35786B,"Size/weight - special transport escort required, sub (b)"
+35790,G,17,44,35790G,"Size/weight - oversize load conditions, sub (g)"
+36600,B,0,51,36600B,"Implements of husbandry - size/width limit exception, sub (b)"
+24604,0,16,43,24604,"Equipment - signal lamp - vehicle over 24,000 lbs required"
+36610,B,0,51,36610B,"Implements of husbandry - length limit, sub (b)"
+24607,0,14,39,24607,Equipment - turn signal lamp requirement - general
+24609,0,14,39,24609,Equipment - school bus lamp requirements
+24610,0,14,39,24610,Equipment - farm equipment lighting requirement
+38010,A,0,60,38010A,"Off-highway - required equipment general, sub (a)"
+38026,5,17,60,380265,"Off-highway - spark arrester requirement, sub (.5)"
+38060,A,0,60,38060A,"Off-highway - helmet required under 18, sub (a)"
+24615,0,16,43,24615,Equipment - side marker lamp requirements
+24800,0,17,44,24800,Equipment - reflector requirements - general
+24950,0,14,39,24950,Equipment - brake performance requirement - general
+24952,0,14,39,24952,Equipment - service brake requirement
+38085,A,0,60,38085A,"Off-highway - headlamp specifications, sub (a)"
+25102,0,14,39,25102,Equipment - identification lamp requirements
+38170,A,0,60,38170A,"Off-highway - muffler requirement, sub (a)"
+25104,0,16,43,25104,Equipment - lamp color restrictions
+25107,0,14,39,25107,Equipment - lighting on side of vehicle
+38316,A,0,60,38316A,"Off-highway - chemical/waste dumping prohibition, sub (a)"
+38318,A,0,60,38318A,"Off-highway - DUI on off-highway vehicle, sub (a)"
+38320,A,0,60,38320A,"Off-highway - accident reporting requirement, sub (a)"
+25109,0,14,39,25109,Equipment - lighting on combination vehicles
+25250,0,14,39,25250,Equipment - rear reflector requirement
+38345,A,14,60,38345A,"Off-highway - registration required on public lands, sub (a)"
+38355,A,15,60,38355A,"Off-highway - registration display requirement, sub (a)"
+38365,A,0,60,38365A,"Off-highway - ownership certificate requirement, sub (a)"
+25252,0,14,39,25252,Equipment - reflector placement requirement
+39002,A,0,46,39002A,"Off-highway - OHV registration fee requirement, sub (a)"
+40001,A,0,47,40001A,"Violation classification - infraction designation, sub (a)"
+25,5,0,47,255,"General - false personation, sub (.5)"
+241,B,0,10,00241B,"Div 1 definitions - autonomous vehicle definition, sub (b)"
+2525,6,0,47,25256,"Administration - license plate requirements, sub (.6)"
+2800,1,17,44,28001,"Administration - failure to yield to peace officer - misdemeanor, sub (.1)"
+2800,2,0,44,28002,"Administration - evading peace officer - reckless/felony, sub (.2)"
+2800,3,0,44,28003,"Administration - evading peace officer - injury/death, sub (.3)"
+2803,C,17,44,02803C,"Administration - vehicle inspection, sub (c)"
+25253,0,14,39,25253,Equipment - reflector color requirements
+25254,0,17,47,25254,Equipment - trailer reflectors requirement
+2807,1,0,47,28071,"Administration - bus inspection requirement, sub (.1)"
+25262,0,17,47,25262,Equipment - reflector visibility requirement
+4000,4,0,46,40004,"Registration - registration renewal, sub (.4)"
+4462,B,0,46,04462B,"Registration - license plate alteration, sub (b)"
+4462,5,0,46,44625,"Registration - license plate alteration, sub (.5)"
+25265,0,17,47,25265,Equipment - reflective material requirements
+4463,B,0,46,04463B,"Registration - use of unissued plate, sub (b)"
+4463,C,0,46,04463C,"Registration - use of unissued plate, sub (c)"
+5201,B,0,46,05201B,"Registration - license plate display, sub (b)"
+25266,0,17,47,25266,Equipment - reflective tape on trailers
+25268,0,17,47,25268,Equipment - reflective material - wide vehicles
+5201,C,0,46,05201C,"Registration - license plate display, sub (c)"
+5201,D,0,46,05201D,"Registration - license plate display, sub (d)"
+5900,B,0,46,05900B,"Registration - dealer report of vehicle sale, sub (b)"
+5900,C,0,46,05900C,"Registration - dealer report of vehicle sale, sub (c)"
+5901,B,0,46,05901B,"Registration - dealer license plate, sub (b)"
+25269,0,17,47,25269,Equipment - reflective sheeting requirements
+5901,C,0,46,05901C,"Registration - dealer license plate, sub (c)"
+25270,0,17,47,25270,Equipment - retroreflective sheeting requirement
+25275,0,17,47,25275,Equipment - retroreflective sheeting - trailers
+25401,0,14,39,25401,Equipment - school bus flashing red light requirement
+25452,0,14,39,25452,Equipment - bicycle lighting requirements
+11108,B,0,47,11108B,"Occupational - dealer prohibited acts, sub (b)"
+11108,C,0,47,11108C,"Occupational - dealer prohibited acts, sub (c)"
+11713,J,0,47,11713J,"Occupational - dealer prohibited acts, sub (j)"
+11725,B,0,46,11725B,"Occupational - dealer license plate use restriction, sub (b)"
+12500,B,0,47,12500B,"Driver license - driving without valid license, sub (b)"
+12500,C,0,47,12500C,"Driver license - driving without valid license, sub (c)"
+12515,B,0,47,12515B,"Driver license - minimum age requirement, sub (b)"
+12951,B,0,47,12951B,"Driver license - failure to display license on demand, sub (b)"
+13004,B,0,47,13004B,"Identification card - fraudulent use, sub (b)"
+13004,C,0,47,13004C,"Identification card - fraudulent use, sub (c)"
+13004,D,0,47,13004D,"Identification card - fraudulent use, sub (d)"
+13004,F,0,47,13004F,"Identification card - fraudulent use, sub (f)"
+13004,G,0,47,13004G,"Identification card - fraudulent use, sub (g)"
+14600,B,0,47,14600B,"Driver license - failure to carry and display license, sub (b)"
+14601,1,0,47,146011,"Driver license - driving with suspended/revoked license, sub (.1)"
+14601,2,0,47,146012,"Driver license - driving with suspended license for DUI, sub (.2)"
+14601,4,0,47,146014,"Driver license - driving with suspended license - injury, sub (.4)"
+14610,B,0,47,14610B,"Driver license - license fraud/alteration, sub (b)"
+14610,C,0,47,14610C,"Driver license - license fraud/alteration, sub (c)"
+14610,D,0,47,14610D,"Driver license - license fraud/alteration, sub (d)"
+14610,F,0,47,14610F,"Driver license - license fraud/alteration, sub (f)"
+14610,G,0,47,14610G,"Driver license - license fraud/alteration, sub (g)"
+25650,0,17,44,25650,Equipment - turn signal use requirements
+25805,0,14,39,25805,Equipment - turn signal lamp requirements
+25951,0,14,39,25951,Equipment - windshield obstruction prohibition
+26100,0,14,39,26100,Equipment - brake system - general requirement
+26101,0,14,39,26101,Equipment - brake system - commercial vehicle requirement
+26301,0,15,40,26301,Equipment - brake fluid requirements
+26303,0,15,40,26303,Equipment - brake tubing requirements
+26307,0,15,40,26307,Equipment - power brake requirements
+26450,0,15,40,26450,Equipment - service brake requirement - general
+26452,0,15,40,26452,Equipment - service brake - dual circuit requirement
+26453,0,15,40,26453,Equipment - vacuum/hydraulic brake reserve requirement
+26456,0,15,40,26456,Equipment - brake on trailer with chain required
+26457,0,15,40,26457,Equipment - trailer brake requirements
+26458,0,15,40,26458,Equipment - trailer brake control requirements
+26503,0,15,40,26503,Equipment - steering play limits
+26504,0,15,40,26504,Equipment - power steering fluid level requirement
+26505,0,15,40,26505,Equipment - power steering pump requirements
+26507,0,15,40,26507,Equipment - steering linkage requirements
+26520,0,15,40,26520,Equipment - tire requirements - general
+26521,0,15,40,26521,Equipment - tire size/load rating requirement
+26522,0,15,40,26522,Equipment - tire tread depth requirement
+26705,0,16,43,26705,Equipment - windshield tinting restrictions
+26707,0,16,43,26707,Equipment - windshield obstruction restriction
+26710,0,16,43,26710,Equipment - defective windshield/rear window prohibited
+26711,0,16,43,26711,Equipment - windshield wiper requirement
+26712,0,16,43,26712,Equipment - windshield washer requirement
+27002,0,16,43,27002,Equipment - siren restriction for non-emergency vehicles
+27003,0,17,44,27003,Equipment - warning device for non-motorized vehicles
+27007,0,16,43,27007,Equipment - backup alarm requirements
+27151,0,0,49,27151,Equipment - exhaust - visible smoke prohibition
+27152,0,16,43,27152,Equipment - exhaust cutout prohibition
+27153,0,0,48,27153,Equipment - exhaust emission standards
+27154,0,16,43,27154,Equipment - catalytic converter requirement
+27155,0,16,43,27155,Equipment - fuel cap requirements
+27156,0,16,43,27156,Equipment - smog device tampering prohibition
+14610,H,0,47,14610H,"Driver license - license fraud/alteration, sub (h)"
+27158,0,16,43,27158,Equipment - emissions system requirement
+27304,0,16,43,27304,Equipment - mudguard requirements
+20002,B,0,19,20002B,"Hit-and-run - property damage - duty to stop, sub (b)"
+20008,B,0,47,20008B,"Accident report - written report to DMV required, sub (b)"
+27305,0,16,43,27305,Equipment - fender requirements
+21201,B,16,43,21201B,"Bicycle - equipment - light and reflector required, sub (b)"
+21201,C,16,43,21201C,"Bicycle - equipment - reflector required, sub (c)"
+21201,D,14,39,21201D,"Bicycle - equipment - handlebar height, sub (d)"
+21204,B,17,44,21204B,"Bicycle - passenger seating requirement, sub (b)"
+21208,B,17,21,21208B,"Bicycle - bicycle lane - exceptions, sub (b)"
+21211,B,0,38,21211B,"Bicycle - bicycle lane obstruction, sub (b)"
+27400,0,17,44,27400,Equipment - headset/earplugs while driving restriction
+21451,B,17,44,21451B,"Traffic signal - green arrow - proceed, sub (b)"
+27452,0,16,43,27452,Equipment - studded tire restriction
+21451,C,11,35,21451C,"Traffic signal - green signal - pedestrian rules, sub (c)"
+27453,0,16,43,27453,Equipment - solid rubber tire restriction
+21451,D,11,35,21451D,"Traffic signal - green signal - yield to peds, sub (d)"
+21453,B,9,33,21453B,"Traffic signal - red signal - right turn on red, sub (b)"
+27454,0,16,43,27454,Equipment - smooth tire prohibition
+27459,0,16,43,27459,Equipment - tire sidewall requirement
+27460,0,16,43,27460,Equipment - regrooved tire restriction
+21453,C,9,33,21453C,"Traffic signal - red signal - pedestrian rules, sub (c)"
+21453,D,11,35,21453D,"Traffic signal - red signal - pedestrian compliance, sub (d)"
+21454,D,17,44,21454D,"Traffic signal - flashing green - pedestrian, sub (d)"
+21456,B,11,35,21456B,"Traffic signal - pedestrian don't walk signal, sub (b)"
+21457,B,17,44,21457B,"Traffic signal - flashing yellow - yield required, sub (b)"
+21460,B,5,27,21460B,"Traffic device - double yellow line, sub (b)"
+21460,5,8,31,214605,"Traffic device - two-way left turn lane rules, sub (.5)"
+27461,0,16,43,27461,Equipment - retreaded tire requirements
+27600,0,16,43,27600,Equipment - fuel tank requirements
+27601,0,16,43,27601,Equipment - fuel line requirements
+27602,0,17,44,27602,Equipment - fuel system backfire arrestor
+27603,0,0,47,27603,Equipment - fuel spillage prevention
+27605,0,0,47,27605,Equipment - fuel cap requirements
+27800,0,16,43,27800,Equipment - motorcycle handlebar height restriction
+28051,0,0,47,28051,Equipment - odometer disclosure requirement
+28071,0,16,43,28071,Equipment - catalytic converter theft protection
+28103,0,16,43,28103,Equipment - anti-theft device requirement
+29001,0,16,43,29001,Towing - safety connection requirement
+29002,0,16,43,29002,Towing - drawbar strength requirement
+29005,0,16,43,29005,Towing - lighting requirement for towed vehicle
+31302,0,17,44,31302,Loading - flammable liquid transport restrictions
+31402,0,16,43,31402,Loading - load width restriction
+31403,0,16,43,31403,Loading - load height restriction
+31500,0,16,43,31500,Loading - livestock transport requirements
+31501,0,16,43,31501,Loading - livestock transport safety requirement
+31612,0,0,47,31612,Explosives - vehicle parking near inhabited area restricted
+31613,0,0,47,31613,Explosives - vehicle stopping restrictions
+31618,0,17,44,31618,Explosives - spill reporting requirement
+32106,0,16,43,32106,Inhalation hazard - transport restrictions - general
+32107,0,Do,44,32107,Inhalation hazard - definition
+33000,0,17,44,33000,Radioactive materials - transport permit required
+21461,5,11,35,214615,"Traffic device - official device obedience, sub (.5)"
+35100,0,17,51,35100,Size/weight - vehicle width limit - general
+35101,0,0,51,35101,Size/weight - vehicle width limit - exceptions
+35102,0,0,51,35102,Size/weight - load width limit
+35109,0,0,51,35109,Size/weight - projecting load front restriction
+35110,0,0,51,35110,Size/weight - projecting load rear restriction
+35111,0,17,51,35111,Size/weight - projecting load side restriction
+35251,0,16,43,35251,Size/weight - vehicle height special permit
+35252,0,0,51,35252,Size/weight - load height limit
+35408,0,0,51,35408,Size/weight - special combination vehicle length
+35410,0,0,51,35410,Size/weight - saddlemount combination length
+35554,0,0,50,35554,Size/weight - weight on bridges limit
+21464,B,17,47,21464B,"Traffic device - signal interference, sub (b)"
+35600,0,Do,50,35600,Size/weight - overweight permit required
+35601,0,0,50,35601,Size/weight - overweight permit conditions
+35789,0,17,44,35789,Size/weight - combination vehicle permit conditions
+36300,0,17,44,36300,Implements of husbandry - speed limit on highway
+36400,0,3,25,36400,Implements of husbandry - speed limit for implements
+36508,0,16,43,36508,Implements of husbandry - lighting requirement
+36510,0,3,25,36510,Implements of husbandry - slow-moving vehicle emblem required
+36605,0,0,51,36605,Implements of husbandry - width limit
+36705,0,0,51,36705,Implements of husbandry - length limit
+38020,0,0,60,38020,Off-highway - registration required for operation on public land
+21464,C,17,47,21464C,"Traffic device - signal interference, sub (c)"
+21466,5,17,47,214665,"Traffic device - lighting impairing vision, sub (.5)"
+21650,1,5,27,216501,"Driving - right side of road - bicycle rule, sub (.1)"
+21651,B,5,27,21651B,"Driving - divided highway - right side, sub (b)"
+21651,C,5,27,21651C,"Driving - divided highway - median crossing prohibited, sub (c)"
+21655,5,0,44,216555,"Driving - HOV/preferential lane requirement, sub (.5)"
+21655,8,0,28,216558,"Driving - HOV lane - crossing restriction, sub (.8)"
+21658,B,17,21,21658B,"Driving - lane change - motorcycle exception, sub (b)"
+21662,B,17,44,21662B,"Driving - blind curve - speed limit, sub (b)"
+21700,5,17,44,217005,"Driving - obstruction of driver by load or person, sub (.5)"
+21702,B,17,44,21702B,"Driving - driving hours limitation, sub (b)"
+21712,B,17,44,21712B,"Driving - unlawful riding on vehicle, sub (b)"
+21712,D,17,44,21712D,"Driving - unlawful riding on vehicle, sub (d)"
+21712,E,17,44,21712E,"Driving - unlawful riding on vehicle, sub (e)"
+21715,B,17,44,21715B,"Driving - towing multiple vehicles - exception, sub (b)"
+21752,B,5,27,21752B,"Passing - no passing zone violation, sub (b)"
+21752,C,5,27,21752C,"Passing - no passing zone - exception, sub (c)"
+21756,B,3,25,21756B,"Passing - passing school bus - multi-lane exception, sub (b)"
+21756,C,3,25,21756C,"Passing - passing school bus - two-lane road, sub (c)"
+21800,B,9,33,21800B,"Right-of-way - intersection - yield, sub (b)"
+21800,C,9,33,21800C,"Right-of-way - intersection yield, sub (c)"
+21800,E,9,33,21800E,"Right-of-way - intersection - exception, sub (e)"
+21801,B,9,33,21801B,"Right-of-way - U-turn - yield required, sub (b)"
+38027,0,0,60,38027,Off-highway - noise limit regulation
+38090,0,0,60,38090,Off-highway - taillamp requirement
+38095,0,0,60,38095,Off-highway - brake requirement
+38300,0,0,60,38300,Off-highway - operating rules on public land
+38302,0,0,60,38302,Off-highway - speed limit on public land
+38304,0,0,60,38304,Off-highway - right-of-way rules on public land
+38305,0,3,60,38305,Off-highway - speed limit in established areas
+38312,0,0,60,38312,Off-highway - crossing highway rules
+38314,0,0,60,38314,Off-highway - operating in unsafe manner prohibited
+38317,0,0,60,38317,Off-highway - reckless operation prohibition
+38319,0,0,60,38319,Off-highway - DUI causing injury on off-highway vehicle
+38330,0,16,60,38330,Off-highway - equipment noise level requirement
+38335,0,14,60,38335,Off-highway - lighting requirement during darkness
+38390,0,0,60,38390,Off-highway - OHV safety training program
+38391,0,0,60,38391,Off-highway - OHV safety training requirement
+38393,0,0,60,38393,Off-highway - OHV safety education program
+38503,0,0,47,38503,Off-highway - OHV trust fund regulations
+38504,0,0,47,38504,Off-highway - OHV area management regulations
+38505,0,0,60,38505,Off-highway - OHV area trail rules
+38506,0,0,47,38506,Off-highway - OHV area closure authority
+11108,0,0,47,11108,Occupational - dealer license - prohibited acts general
+13004,0,0,47,13004,Identification card - fraudulent use - general
+21662,0,17,44,21662,Driving - blind intersection/curve - reduced speed
+21802,0,9,33,21802,Right-of-way - stop sign - yield to approaching vehicles
+22356,0,3,25,22356,Speed - 70 mph speed limit - designated freeway
+23104,0,0,0,23104,Reckless driving causing bodily injury
+23116,0,17,44,23116,Transporting person in truck bed prohibited - general
+23153,0,1,20,23153,DUI causing bodily injury - general provision
+24600,0,14,39,24600,Equipment - taillamp requirements - general
+24603,0,14,39,24603,Equipment - stop lamp requirements - general
+22102,,,,,NOTE - duplicate row with missing data (vc_code_full is null)
+22110,,,,,NOTE - duplicate row with missing data (vc_code_full is null)
+22500,A,13,38,22500A,"Parking - sidewalk parking prohibited, sub (a)"
+22500,E,13,38,22500E,"Parking - bus zone parking prohibited, sub (e)"
+22500,I,13,38,22500I,"Parking - double parking prohibited, sub (i)"
+22500,1,13,38,225001,"Parking - one-way roadway distance from curb, sub (1)"
+22502,A,13,38,22502A,"Parking - parallel to curb required, sub (a)"
+22504,A,13,38,22504A,"Parking - unincorporated area prohibition, sub (a)"
+22505,B,13,38,22505B,"Parking - state highway prohibition, sub (b)"
+31610,0,16,43,31610,Explosives - transport regulations - general
+35104,0,0,51,35104,Size/weight - load width special permit
+35250,0,17,51,35250,Size/weight - vehicle height limit
+20,0,0,47,20,General - false statement to DMV or police
+241,A,0,10,00241A,"Div 1 definitions - autonomous vehicle definition, sub (a)"
+245,C,0,6,00245C,"Div 1 definitions - motor vehicle definition, sub (c)"
+647,F,23,1,00647F,"Div 1 definitions - vehicle definition, sub (f)"
+1202,1,0,62,12021,"Administration - license document requirement, sub (.1)"
+2402,6,0,47,24026,"Administration - license plate display, sub (.6)"
+2418,5,0,47,24185,"Administration - vehicle registration display, sub (.5)"
+2510,B,0,47,02510B,"Administration - license plate display violation, sub (b)"
+2525,2,0,47,25252,"Administration - license plate requirements, sub (.2)"
+2803,A,17,44,02803A,"Administration - vehicle inspection - officer authority, sub (a)"
+2807,B,0,47,02807B,"Administration - vehicle inspection requirement, sub (b)"
+4000,A,0,46,04000A,"Registration - vehicle registration required, sub (a)"
+4004,A,0,46,04004A,"Registration - registration renewal, sub (a)"
+4152,5,0,46,41525,"Registration - special plates, sub (.5)"
+4453,6,0,46,44536,"Registration - license plate alteration, sub (.6)"
+4454,A,0,46,04454A,"Registration - registration card display, sub (a)"
+4462,A,0,46,04462A,"Registration - license plate alteration, sub (a)"
+4463,A,0,46,04463A,"Registration - use of unissued plate, sub (a)"
+5011,A,0,46,05011A,"Registration - special interest vehicle plate rules, sub (a)"
+5201,A,0,46,05201A,"Registration - license plate display, sub (a)"
+5350,3,0,46,53503,"Registration - registration tab placement, sub (.3)"
+5900,A,0,46,05900A,"Registration - dealer report of vehicle sale, sub (a)"
+5901,A,0,46,05901A,"Registration - dealer license plate, sub (a)"
+5902,A,0,46,05902A,"Registration - dealer report of dismantled vehicle, sub (a)"
+9102,5,0,46,91025,"Registration - vessel registration, sub (.5)"
+10750,A,0,47,10750A,"Antitheft - altered/removed vehicle identification number, sub (a)"
+10751,A,0,47,10751A,"Antitheft - possession of altered VIN vehicle, sub (a)"
+10851,5,0,47,108515,"Antitheft - unlawful taking or driving of vehicle, sub (.5)"
+11108,A,0,47,11108A,"Occupational - dealer prohibited acts, sub (a)"
+11513,A,0,47,11513A,"Occupational - dismantler license requirement, sub (a)"
+11516,C,0,46,11516C,"Occupational - dismantler operations restriction, sub (c)"
+11713,I,0,47,11713I,"Occupational - dealer prohibited acts, sub (i)"
+11715,F,0,46,11715F,"Occupational - dealer advertising restrictions, sub (f)"
+11725,A,0,46,11725A,"Occupational - dealer license plate use restriction, sub (a)"
+12500,A,0,47,12500A,"Driver license - driving without valid license, sub (a)"
+12515,A,0,47,12515A,"Driver license - minimum age requirement, sub (a)"
+12519,A,0,47,12519A,"Driver license - youth bus certificate required, sub (a)"
+12524,A,0,47,12524A,"Driver license - paratransit vehicle license, sub (a)"
+12804,3,0,47,128043,"Driver license - license record requirement, sub (.3)"
+12951,A,0,47,12951A,"Driver license - failure to display license on demand, sub (a)"
+13004,A,0,47,13004A,"Identification card - fraudulent use, sub (a)"
+13004,E,0,47,13004E,"Identification card - fraudulent use, sub (e)"
+14600,A,0,47,14600A,"Driver license - failure to carry and display license, sub (a)"
+14601,A,0,47,14601A,"Driver license - driving with suspended/revoked license, sub (a)"
+14601,5,0,47,146015,"Driver license - driving with suspended license - refusal, sub (.5)"
+14605,A,0,47,14605A,"Driver license - false affidavit to obtain license, sub (a)"
+14610,A,0,47,14610A,"Driver license - license fraud/alteration, sub (a)"
+14610,E,0,47,14610E,"Driver license - license fraud/alteration, sub (e)"
+15275,A,0,47,15275A,"Commercial license - CDL disqualification grounds, sub (a)"
+16020,A,0,47,16020A,"Financial responsibility - evidence of insurance required, sub (a)"
+16025,A,0,47,16025A,"Financial responsibility - minimum liability coverage required, sub (a)"
+16457,A,0,47,16457A,"Financial responsibility - SR-22 proof required, sub (a)"
+20001,A,0,19,20001A,"Hit-and-run - causing death or injury - duty to stop, sub (a)"
+20002,A,0,19,20002A,"Hit-and-run - property damage - duty to stop, sub (a)"
+20008,A,0,47,20008A,"Accident report - written report to DMV required, sub (a)"
+21100,3,17,47,211003,"Local regulation - vehicle traffic on public property, sub (.3)"
+21106,B,11,35,21106B,"Local regulation - pedestrian signal compliance, sub (b)"
+21113,A,17,44,21113A,"Local regulation - traffic on public grounds, sub (a)"
+21802,B,9,33,21802B,"Right-of-way - stop sign - yield, sub (b)"
+21802,C,9,33,21802C,"Right-of-way - stop sign, sub (c)"
+21803,B,9,33,21803B,"Right-of-way - yield sign, sub (b)"
+21804,B,9,33,21804B,"Right-of-way - private road/driveway entry, sub (b)"
+21805,C,17,47,21805C,"Right-of-way - equestrian, sub (c)"
+21806,B,9,33,21806B,"Right-of-way - emergency vehicle - yield, sub (b)"
+21806,C,11,35,21806C,"Right-of-way - emergency vehicle - pedestrian rules, sub (c)"
+21950,B,11,35,21950B,"Pedestrian - pedestrian duty in crosswalk, sub (b)"
+21954,B,11,35,21954B,"Pedestrian - crossing outside crosswalk, sub (b)"
+22100,B,8,31,22100B,"Turning - left turn - required position, sub (b)"
+22100,5,8,31,221005,"Turning - U-turn at signal-controlled intersection, sub (.5)"
+22111,B,17,44,22111B,"Turning - signal - hand and arm position - right, sub (b)"
+22111,C,17,44,22111C,"Turning - signal - hand and arm position - stop, sub (c)"
+22348,C,3,25,22348C,"Speed - maximum 65 mph freeway, sub (c)"
+22400,B,2,22,22400B,"Speed - minimum speed - impeding traffic, sub (b)"
+22406,B,3,25,22406B,"Speed - maximum truck speed, sub (b)"
+22406,C,3,25,22406C,"Speed - maximum truck speed, sub (c)"
+22406,D,3,25,22406D,"Speed - maximum truck speed, sub (d)"
+22406,F,3,52,22406F,"Speed - maximum truck speed - criminal penalty, sub (f)"
+22451,B,12,23,22451B,"Stop required - railroad crossing, sub (b)"
+22500,B,13,38,22500B,"Parking - intersection parking prohibited, sub (b)"
+22500,C,13,38,22500C,"Parking - crosswalk parking prohibited, sub (c)"
+22500,D,13,38,22500D,"Parking - between safety zone and curb prohibited, sub (d)"
+22500,F,13,38,22500F,"Parking - public/private driveway blocking prohibited, sub (f)"
+22500,G,13,38,22500G,"Parking - disabled vehicle exception, sub (g)"
+22500,H,13,38,22500H,"Parking - excavation/obstruction zone, sub (h)"
+22500,J,13,38,22500J,"Parking - bridge/elevated structure prohibited, sub (j)"
+22500,K,13,38,22500K,"Parking - tunnel parking prohibited, sub (k)"
+22500,L,13,38,22500L,"Parking - rail transit path blocking prohibited, sub (l)"
+22502,E,13,38,22502E,"Parking - parallel parking exception, sub (e)"
+22515,B,13,38,22515B,"Parking - unattended vehicle brake requirement, sub (b)"
+22520,5,13,38,225205,"Parking - freeway prohibition, sub (.5)"
+22520,6,13,38,225206,"Parking - freeway prohibition, sub (.6)"
+22523,B,0,47,22523B,"Parking - abandoned vehicle prohibition, sub (b)"
+22526,B,2,22,22526B,"Parking - blocking intersection prohibited, sub (b)"
+22952,B,0,47,22952B,"Parking lot - speed limit posted requirement, sub (b)"
+23103,B,0,26,23103B,"Reckless driving, sub (b)"
+23104,B,0,26,23104B,"Reckless driving causing bodily injury, sub (b)"
+23109,B,17,44,23109B,"Speed contest - aiding/abetting, sub (b)"
+23109,C,17,44,23109C,"Speed contest - exhibition of speed, sub (c)"
+23109,D,0,47,23109D,"Speed contest - motor vehicle exhibition, sub (d)"
+23110,B,0,47,23110B,"Throwing substance at vehicle - misdemeanor, sub (b)"
+23112,B,17,47,23112B,"Dumping material on highway, sub (b)"
+23112,5,17,47,231125,"Dumping material on highway, sub (.5)"
+23114,B,17,44,23114B,"Spilling load on highway, sub (b)"
+23128,B,17,44,23128B,"Motor vehicle on public lands - restriction, sub (b)"
+23128,C,17,44,23128C,"Motor vehicle on public lands - restriction, sub (c)"
+23128,D,17,44,23128D,"Motor vehicle on public lands - restriction, sub (d)"
+23130,5,0,49,231305,"Driving on closed road, sub (.5)"
+23152,B,1,20,23152B,"DUI - BAC 0.08% or more, sub (b)"
+23152,C,1,20,23152C,"DUI - addicted person driving, sub (c)"
+23152,D,1,20,23152D,"DUI - commercial vehicle BAC 0.04%, sub (d)"
+23153,B,1,20,23153B,"DUI causing bodily injury - BAC 0.08%, sub (b)"
+23153,D,0,20,23153D,"DUI causing bodily injury - commercial vehicle, sub (d)"
+23222,B,0,47,23222B,"Marijuana - open container in vehicle, sub (b)"
+23224,B,0,47,23224B,"Alcohol - minor possessing alcohol, sub (b)"
+23270,B,17,44,23270B,"Vehicular crossing - towing prohibition, sub (b)"
+23330,B,17,47,23330B,"Toll road - prohibited acts, sub (b)"
+23330,C,17,47,23330C,"Toll road - prohibited acts, sub (c)"
+23330,D,17,47,23330D,"Toll road - prohibited acts, sub (d)"
+24002,B,16,43,24002B,"Equipment - adequate brakes required, sub (b)"
+24008,5,16,43,240085,"Equipment - windshield wiper, sub (.5)"
+24015,B,16,43,24015B,"Equipment - headlamp aim requirement, sub (b)"
+24252,B,14,39,24252B,"Equipment - headlamp requirements, sub (b)"
+24252,C,14,39,24252C,"Equipment - headlamp requirements, sub (c)"
+24253,B,14,39,24253B,"Equipment - headlamp specifications, sub (b)"
+24402,B,17,44,24402B,"Equipment - auxiliary driving/passing lamps, sub (b)"
+24404,B,14,39,24404B,"Equipment - foglamp requirements, sub (b)"
+24404,C,17,44,24404C,"Equipment - foglamp requirements, sub (c)"
+24404,E,17,44,24404E,"Equipment - foglamp requirements, sub (e)"
+24407,B,14,39,24407B,"Equipment - signal lamp visibility, sub (b)"
+24408,B,14,39,24408B,"Equipment - signal lamp color, sub (b)"
+24409,B,17,44,24409B,"Equipment - headlamp color requirement, sub (b)"
+24410,B,14,39,24410B,"Equipment - reflector requirements, sub (b)"
+24600,B,14,39,24600B,"Equipment - taillamp requirements, sub (b)"
+24600,C,14,39,24600C,"Equipment - taillamp requirements, sub (c)"
+24600,D,14,39,24600D,"Equipment - taillamp requirements, sub (d)"
+24600,F,14,39,24600F,"Equipment - taillamp requirements, sub (f)"
+24603,B,14,39,24603B,"Equipment - stop lamp requirements, sub (b)"
+24603,C,14,39,24603C,"Equipment - stop lamp requirements, sub (c)"
+24603,D,14,39,24603D,"Equipment - stop lamp requirements, sub (d)"
+24603,F,14,39,24603F,"Equipment - stop lamp requirements, sub (f)"
+24603,G,14,39,24603G,"Equipment - stop lamp requirements, sub (g)"
+24605,B,17,44,24605B,"Equipment - license plate lamp requirements, sub (b)"
+24606,B,14,39,24606B,"Equipment - backup lamp requirements, sub (b)"
+24606,C,14,39,24606C,"Equipment - backup lamp requirements, sub (c)"
+24606,D,14,39,24606D,"Equipment - backup lamp requirements, sub (d)"
+24607,B,14,39,24607B,"Equipment - turn signal lamp, sub (b)"
+24607,C,14,39,24607C,"Equipment - turn signal lamp, sub (c)"
+24607,D,14,39,24607D,"Equipment - turn signal lamp, sub (d)"
+24608,B,14,39,24608B,"Equipment - hazard lamp requirements, sub (b)"
+24608,C,14,39,24608C,"Equipment - hazard lamp requirements, sub (c)"
+24608,D,14,39,24608D,"Equipment - hazard lamp requirements, sub (d)"
+24951,C,14,39,24951C,"Equipment - brake performance standard, sub (c)"
+24953,B,14,39,24953B,"Equipment - parking brake requirement, sub (b)"
+25100,B,14,39,25100B,"Equipment - clearance/marker lamp front, sub (b)"
+25100,C,14,39,25100C,"Equipment - clearance/marker lamp front, sub (c)"
+25100,E,14,39,25100E,"Equipment - clearance/marker lamp front, sub (e)"
+25102,5,14,39,251025,"Equipment - identification lamp, sub (.5)"
+25103,B,14,39,25103B,"Equipment - lamp placement requirements, sub (b)"
+25105,B,14,39,25105B,"Equipment - lighting on projecting loads, sub (b)"
+25105,C,14,39,25105C,"Equipment - lighting on projecting loads, sub (c)"
+25106,B,14,39,25106B,"Equipment - lighting on wide loads, sub (b)"
+25252,5,14,39,252525,"Equipment - reflector placement, sub (.5)"
+25257,B,14,39,25257B,"Equipment - motorcycle reflectors, sub (b)"
+25270,5,17,47,252705,"Equipment - retroreflective sheeting, sub (.5)"
+25275,5,17,47,252755,"Equipment - retroreflective sheeting trailers, sub (.5)"
+25276,B,17,47,25276B,"Equipment - retroreflective material color, sub (b)"
+25300,B,17,47,25300B,"Equipment - clearance lamp color requirements, sub (b)"
+25300,C,17,47,25300C,"Equipment - clearance lamp color requirements, sub (c)"
+25300,E,17,47,25300E,"Equipment - clearance lamp color requirements, sub (e)"
+25301,B,17,47,25301B,"Equipment - identification lamp color, sub (b)"
+25305,B,16,43,25305B,"Equipment - lamp restrictions, sub (b)"
+25351,C,14,39,25351C,"Equipment - flashing warning lamp, sub (c)"
+25400,C,14,39,25400C,"Equipment - flashing amber warning lamp, sub (c)"
+25400,D,14,39,25400D,"Equipment - flashing amber warning lamp, sub (d)"
+25650,5,17,44,256505,"Equipment - turn signal use, sub (.5)"
+25651,C,14,39,25651C,"Equipment - turn signal lamp specifications, sub (c)"
+25803,B,14,39,25803B,"Equipment - brake light visibility requirement, sub (b)"
+25803,C,14,39,25803C,"Equipment - brake light visibility requirement, sub (c)"
+25950,B,14,39,25950B,"Equipment - windshield material requirements, sub (b)"
+25952,B,14,39,25952B,"Equipment - side window requirements, sub (b)"
+26301,5,15,40,263015,"Equipment - brake fluid requirements, sub (.5)"
+31602,B,17,44,31602B,"Explosives - transport permit conditions, sub (b)"
+31602,C,13,38,31602C,"Explosives - transport permit conditions, sub (c)"
+31610,B,16,43,31610B,"Explosives - transport regulations, sub (b)"
+31610,C,16,43,31610C,"Explosives - transport regulations, sub (c)"
+31610,D,16,43,31610D,"Explosives - transport regulations, sub (d)"
+31614,B,17,44,31614B,"Explosives - warning device requirement, sub (b)"
+31614,C,13,38,31614C,"Explosives - warning device requirement, sub (c)"
+31614,D,17,44,31614D,"Explosives - warning device requirement, sub (d)"
+31614,F,17,44,31614F,"Explosives - warning device requirement, sub (f)"
+31614,G,13,38,31614G,"Explosives - warning device requirement, sub (g)"
+31614,H,17,44,31614H,"Explosives - warning device requirement, sub (h)"
+35100,5,16,51,351005,"Size/weight - vehicle width limit, sub (.5)"
+35104,B,0,51,35104B,"Size/weight - load width permit, sub (b)"
+35250,B,17,51,35250B,"Size/weight - vehicle height limit, sub (b)"
+35401,B,0,51,35401B,"Size/weight - vehicle combination length, sub (b)"
+35406,B,0,51,35406B,"Size/weight - truck/trailer combination length, sub (b)"
+35411,B,0,51,35411B,"Size/weight - bus length limit, sub (b)"
+35551,B,0,50,35551B,"Size/weight - gross vehicle weight limit, sub (b)"
+35551,C,0,50,35551C,"Size/weight - gross vehicle weight limit, sub (c)"
+35551,5,0,50,355515,"Size/weight - gross weight limit, sub (.5)"
+35552,B,0,50,35552B,"Size/weight - axle weight limit, sub (b)"
+35552,C,0,50,35552C,"Size/weight - axle weight limit, sub (c)"
+35790,H,17,44,35790H,"Size/weight - oversize load conditions, sub (h)"
+36600,C,0,51,36600C,"Implements of husbandry - size/width exception, sub (c)"
+38060,B,0,60,38060B,"Off-highway - helmet required under 18, sub (b)"
+38170,B,0,60,38170B,"Off-highway - muffler requirement, sub (b)"
+38318,B,0,60,38318B,"Off-highway - DUI on off-highway vehicle, sub (b)"
+38318,5,0,60,383185,"Off-highway - DUI on off-highway vehicle, sub (.5)"
+38320,B,0,60,38320B,"Off-highway - accident reporting requirement, sub (b)"
+40001,B,0,47,40001B,"Violation classification - infraction designation, sub (b)"
+21456,A,11,35,21456A,"Traffic signal - pedestrian walk signal, sub (a)"
+21457,A,12,23,21457A,"Traffic signal - flashing red - stop required, sub (a)"
+21460,A,5,27,21460A,"Traffic device - double yellow line - no crossing, sub (a)"
+21461,A,17,44,21461A,"Traffic device - official traffic device - obedience required, sub (a)"
+21464,A,17,47,21464A,"Traffic device - interference with signal - prohibition, sub (a)"
+21651,A,5,27,21651A,"Driving - divided highway - right side required, sub (a)"
+21654,A,2,22,21654A,"Driving - slow vehicle - right lane required, sub (a)"
+21655,B,17,21,21655B,"Driving - HOV/bus lane violation, sub (b)"
+21658,A,7,28,21658A,"Driving - unsafe lane change, sub (a)"
+21662,A,17,44,21662A,"Driving - blind intersection - speed limit, sub (a)"
+21702,A,17,44,21702A,"Driving - driving hours limitation - bus, sub (a)"
+21704,A,4,30,21704A,"Driving - following too closely - truck/bus, sub (a)"
+21712,A,17,44,21712A,"Driving - unlawful riding on exterior of vehicle, sub (a)"
+21712,F,17,44,21712F,"Driving - unlawful riding on vehicle, sub (f)"
+21715,A,17,44,21715A,"Driving - towing more than one vehicle prohibited, sub (a)"
+21752,A,5,27,21752A,"Passing - no passing zone - oncoming traffic, sub (a)"
+21756,A,6,29,21756A,"Passing - passing stopped school bus, sub (a)"
+21800,A,9,33,21800A,"Right-of-way - uncontrolled intersection - yield to right, sub (a)"
+21801,A,9,33,21801A,"Right-of-way - left turn - yield to oncoming traffic, sub (a)"
+21802,A,9,33,21802A,"Right-of-way - stop sign - yield, sub (a)"
+21803,A,9,33,21803A,"Right-of-way - yield sign - yield to approaching traffic, sub (a)"
+21804,A,9,33,21804A,"Right-of-way - private road/driveway - yield to road traffic, sub (a)"
+21805,B,17,44,21805B,"Right-of-way - equestrian crossing - yield, sub (b)"
+21806,A,9,33,21806A,"Right-of-way - authorized emergency vehicle - yield required, sub (a)"
+21950,A,10,34,21950A,"Pedestrian - driver yield at crosswalk required, sub (a)"
+21954,A,11,35,21954A,"Pedestrian - crossing outside crosswalk - pedestrian duty, sub (a)"
+22100,A,8,31,22100A,"Turning - right turn - required position, sub (a)"
+22101,D,8,31,22101D,"Turning - turn at intersection - rules, sub (d)"
+22111,A,17,44,22111A,"Turning - signal - hand and arm position - left, sub (a)"
+22348,B,3,25,22348B,"Speed - maximum 65 mph freeway, sub (b)"
+22349,A,3,25,22349A,"Speed - maximum 65 mph - two-lane undivided highway, sub (a)"
+22356,B,3,25,22356B,"Speed - 70 mph freeway speed limit, sub (b)"
+22400,A,2,22,22400A,"Speed - minimum speed - impeding traffic prohibited, sub (a)"
+22405,A,3,25,22405A,"Speed - reduced speed on bridges required, sub (a)"
+22406,A,3,25,22406A,"Speed - maximum truck speed 55 mph, sub (a)"
+22406,E,3,25,22406E,"Speed - maximum truck speed, sub (e)"
+22451,A,12,23,22451A,"Stop required - railroad crossing - train approaching, sub (a)"
+22452,B,17,44,22452B,"Stop required - railroad crossing - certain vehicles, sub (b)"
+22454,A,12,23,22454A,"Stop required - school bus stop arm signals - compliance, sub (a)"
+26302,B,15,40,26302B,"Equipment - brake hose requirements, sub (b)"
+26302,C,15,40,26302C,"Equipment - brake hose requirements, sub (c)"
+26302,D,15,40,26302D,"Equipment - brake hose requirements, sub (d)"
+26304,B,15,40,26304B,"Equipment - wheel cylinder requirements, sub (b)"
+26311,B,15,40,26311B,"Equipment - brake adjustment requirement, sub (b)"
+26451,B,15,40,26451B,"Equipment - service brake performance standard, sub (b)"
+26451,C,15,40,26451C,"Equipment - service brake performance standard, sub (c)"
+26454,B,15,40,26454B,"Equipment - parking brake requirement, sub (b)"
+26458,5,22,44,264585,"Equipment - trailer brake control, sub (.5)"
+26506,B,15,40,26506B,"Equipment - steering component requirements, sub (b)"
+26508,B,15,40,26508B,"Equipment - wheel/rim requirements, sub (b)"
+26508,E,15,40,26508E,"Equipment - wheel/rim requirements, sub (e)"
+26508,F,15,40,26508F,"Equipment - wheel/rim requirements, sub (f)"
+26508,H,15,40,26508H,"Equipment - wheel/rim requirements, sub (h)"
+26508,I,15,40,26508I,"Equipment - wheel/rim requirements, sub (i)"
+26508,J,15,40,26508J,"Equipment - wheel/rim requirements, sub (j)"
+26508,O,17,47,26508O,"Equipment - wheel/rim requirements, sub (o)"
+26701,B,16,43,26701B,"Equipment - windshield glass requirements, sub (b)"
+26701,C,16,43,26701C,"Equipment - windshield glass requirements, sub (c)"
+26701,D,16,43,26701D,"Equipment - windshield glass requirements, sub (d)"
+26703,B,16,43,26703B,"Equipment - side/rear window glass, sub (b)"
+26706,B,16,43,26706B,"Equipment - side window tinting restriction, sub (b)"
+26708,2,16,43,267082,"Equipment - window obstruction material restriction, sub (.2)"
+26708,5,16,43,267085,"Equipment - window obstruction material restriction, sub (.5)"
+26709,B,16,43,26709B,"Equipment - rear view mirror passenger side, sub (b)"
+27000,B,16,43,27000B,"Equipment - horn requirement, sub (b)"
+27001,B,17,44,27001B,"Equipment - horn use restriction, sub (b)"
+27150,B,16,49,27150B,"Equipment - exhaust system requirements, sub (b)"
+27150,1,0,47,271501,"Equipment - exhaust system requirement, sub (.1)"
+27150,8,0,47,271508,"Equipment - exhaust system requirement, sub (.8)"
+27153,5,0,48,271535,"Equipment - exhaust emission standards, sub (.5)"
+27158,5,16,43,271585,"Equipment - emissions system requirement, sub (.5)"
+27315,E,17,62,27315E,"Equipment - seat belt requirement, sub (e)"
+27315,F,16,63,27315F,"Equipment - child seat belt requirement, sub (f)"
+27450,B,16,43,27450B,"Equipment - tire chain requirement, sub (b)"
+27450,C,16,43,27450C,"Equipment - tire chain requirement, sub (c)"
+27459,5,16,43,274595,"Equipment - tire sidewall requirement, sub (.5)"
+27460,5,16,43,274605,"Equipment - regrooved tire restriction, sub (.5)"
+27700,B,16,43,27700B,"Equipment - load cover requirement, sub (b)"
+27700,C,16,43,27700C,"Equipment - load cover requirement, sub (c)"
+27801,B,16,43,27801B,"Equipment - motorcycle passenger seat requirement, sub (b)"
+27803,C,0,44,27803C,"Equipment - motorcycle helmet passenger required, sub (c)"
+28051,5,0,47,280515,"Equipment - odometer disclosure, sub (.5)"
+28080,B,16,44,28080B,"Equipment - fuel system vapor recovery, sub (b)"
+28085,D,16,43,28085D,"Equipment - gas cap requirement, sub (d)"
+29003,B,16,43,29003B,"Towing - hitch/coupling requirement, sub (b)"
+29003,C,16,43,29003C,"Towing - hitch/coupling requirement, sub (c)"
+29004,B,16,43,29004B,"Towing - safety chain requirement, sub (b)"
+29004,C,16,43,29004C,"Towing - safety chain requirement, sub (c)"
+31303,C,17,44,31303C,"Loading - explosive transport regulations, sub (c)"
+31400,B,16,43,31400B,"Loading - passenger vehicle load limit, sub (b)"
+31400,C,16,43,31400C,"Loading - passenger vehicle load limit, sub (c)"
+31401,D,16,43,31401D,"Loading - projecting load regulations, sub (d)"
+21200,A,17,44,21200A,"Bicycle - rights and duties of bicycle rider, sub (a)"
+23152,F,1,20,23152F,"DUI - drugs - driving under influence of drugs, sub (f)"
+23152,G,1,20,23152G,"DUI - combined alcohol and drugs, sub (g)"
