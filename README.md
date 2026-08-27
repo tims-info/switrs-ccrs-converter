@@ -261,8 +261,8 @@ Below is the structured schema mapping from **CCRS to SWITRS**:
 
 These fields from CCRS files have no SWITRS equivalent. The script archives them inside unmapped\_ccrs\_fields.csv, preserving the raw data and keying it by CollisionId and SourceTable for future reference.
 
-* **Crash Table:** ReportVersion, IsPreliminary, DispatchNotified, HasPhotographs, IsDeleted, JudicialDistrict, PreparedDate, PrimaryCollisionFactorIsCited, PrimaryCollisionPartyNumber, ReviewedDate, IsLocationReferToNarrative, IsAOIOneSameAsLocation, EvidenceNumber, CHP555Version, HasDigitalMediaFiles, ServerCreateTime, ServerModifiedTime.  
-* **Party Table:** IsOnDutyEmergencyVehicle, IsHitAndRun, AirbagCode, StreetOrHighwayName, SpeedLimit, DriverLicenseClass, DriverLicenseStateCode, Vehicle1Color, Lane, ThruLane, TotalLane, IsDREConducted, VehicleBodyTypeTextDescription, VehicleMakeTextDescription, SpecialPurposeVehicleIndicatorCode, PartyTypeTextDescription, InattentionTextDescription, OtherAssociateFactorTextDescription, DamageCodeTextDescription, DamageLocationDescription, DriveByShootingRelated, DrivenBySchoolEmpioyee, IsIncidentReportedToADA, VehicleInvolvedWithTextDescription, SobrietyTextDescription, SafetyEquipmentTextDescription, ProcessingStatusTextDescription.  
+* **Crash Table:** ReportVersion, IsPreliminary, DispatchNotified, HasPhotographs, IsDeleted, JudicialDistrict, PreparedDate, PrimaryCollisionFactorIsCited, PrimaryCollisionPartyNumber, ReviewedDate, SecondaryUnitOfMeasure, CreatedDate, IsCountyRoad, IsFreeway,  IsLocationReferToNarrative, IsAOIOneSameAsLocation, EvidenceNumber, CHP555Version, NotificationDate, HasDigitalMediaFiles. 
+* **Party Table:** IsOnDutyEmergencyVehicle, IsHitAndRun, AirbagCode, StreetOrHighwayName, SpeedLimit, DriverLicenseClass, DriverLicenseStateCode, Vehicle1Color, Lane, ThruLane, TotalLane, IsDREConducted
 * **IWP Table:** Race, IsWitnessOnly, IsPassengerOnly, AirbagCode.
 
 ## **4. SWITRS → CCRS Converter (switrs\_ccrs\_converter.py)**
